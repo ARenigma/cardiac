@@ -92,14 +92,14 @@ export function Header() {
         }`}
       >
         <div className="flex items-center h-[64px] lg:h-[76px]">
-          {/* Logo — left */}
-          <Link href="/" className="flex-shrink-0 px-4 lg:px-6 h-full flex items-center">
+          {/* Logo — left, square tile matching header height */}
+          <Link href="/" className="flex-shrink-0 w-[64px] h-[64px] lg:w-[76px] lg:h-[76px] flex items-center justify-center p-2">
             <Image
               src="/images/sierrra-logo.png"
               alt="Sierra Heart & Vascular Institute"
-              width={160}
-              height={64}
-              className="h-14 w-auto"
+              width={76}
+              height={76}
+              className="w-full h-full object-contain"
             />
           </Link>
 
