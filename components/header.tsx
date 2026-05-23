@@ -92,14 +92,14 @@ export function Header() {
         }`}
       >
         <div className="flex items-center h-[64px] lg:h-[76px]">
-          {/* Logo — matches CTA panel natural width (163px), full header height */}
-          <Link href="/" className="flex-shrink-0 w-[163px] h-[64px] lg:h-[76px] flex items-center justify-center px-3 py-1.5">
+          {/* Mobile logo — inside header on small screens */}
+          <Link href="/" className="lg:hidden flex-shrink-0 px-4 h-full flex items-center">
             <Image
               src="/images/sierrra-logo.png"
               alt="Sierra Heart & Vascular Institute"
-              width={163}
-              height={76}
-              className="w-full h-full object-contain"
+              width={120}
+              height={48}
+              className="h-10 w-auto object-contain"
             />
           </Link>
 
@@ -144,6 +144,17 @@ export function Header() {
           </div>
         </div>
       </header>
+
+      {/* Desktop logo — fixed block at top of left column, aligns with header top */}
+      <Link href="/" className="fixed left-0 top-0 z-50 w-[163px] h-[76px] hidden lg:flex items-center justify-center p-3">
+        <Image
+          src="/images/sierrra-logo.png"
+          alt="Sierra Heart & Vascular Institute"
+          width={163}
+          height={76}
+          className="w-full h-full object-contain"
+        />
+      </Link>
 
       {/* CTA column — left side, homepage only, hides on scroll */}
       <AnimatePresence>
