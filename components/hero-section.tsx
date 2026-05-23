@@ -61,7 +61,7 @@ export function HeroSection() {
             BOOK CONSULT
           </Link>
           <a
-            href="tel:7199600363"
+            href="tel:5592180076"
             className="px-6 py-3 border border-white/40 text-white text-[14px] font-sans font-medium tracking-[0.1em] hover:border-white transition-colors"
           >
             CALL US

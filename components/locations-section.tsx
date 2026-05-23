@@ -6,18 +6,11 @@ import Link from "next/link"
 
 const locations = [
   {
-    name: "Woodmen Medical Plaza",
-    address: "8890 N Union Blvd, Suite 250",
-    city: "Colorado Springs, CO 80920",
-    phone: "719.960.0363",
-    hours: "Mon – Fri: 8:00 AM – 5:00 PM",
-  },
-  {
-    name: "Union Medical Campus",
-    address: "6071 E Woodmen Rd, Suite 200",
-    city: "Colorado Springs, CO 80923",
-    phone: "719.960.0363",
-    hours: "Mon – Fri: 8:00 AM – 5:00 PM",
+    name: "Sierra Heart & Vascular Institute",
+    address: "Address Coming Soon",
+    city: "Fresno, California",
+    phone: "(559) 218-0076",
+    hours: "Hours Coming Soon",
   },
 ]
 
@@ -42,7 +35,7 @@ export function LocationsSection() {
         </motion.div>
 
         {/* Locations */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-1 max-w-lg gap-8">
           {locations.map((loc, index) => (
             <motion.div
               key={loc.name}

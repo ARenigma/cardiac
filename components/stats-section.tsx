@@ -3,10 +3,10 @@
 import { motion } from "framer-motion"
 
 const stats = [
-  { value: "50+", label: "Years of Excellence" },
-  { value: "25,000+", label: "Patients Treated" },
-  { value: "98%", label: "Patient Satisfaction" },
-  { value: "500+", label: "TAVR Procedures" },
+  { value: "17+", label: "Years of Experience" },
+  { value: "4.7★", label: "Patient Rating" },
+  { value: "3", label: "Hospital Affiliations" },
+  { value: "8+", label: "Research Publications" },
 ]
 
 export function StatsSection() {

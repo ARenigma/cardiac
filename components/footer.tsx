@@ -66,49 +66,49 @@ export function Footer() {
 
           {/* Col 1 — Medical badges */}
           <div className="flex items-center justify-center lg:justify-start gap-4">
-            {/* NMC */}
+            {/* FACC */}
             <div className="flex flex-col items-center gap-2">
               <div className="w-14 h-14 border border-white/25 flex items-center justify-center">
                 <svg viewBox="0 0 40 40" className="w-10 h-10" fill="none">
                   <circle cx="20" cy="20" r="18" stroke="currentColor" strokeWidth="1.2" className="text-white/60" />
-                  <text x="20" y="17" textAnchor="middle" fill="currentColor" fontSize="8" fontWeight="700" letterSpacing="0.5" className="text-white/80">NMC</text>
-                  <text x="20" y="27" textAnchor="middle" fill="currentColor" fontSize="4.5" letterSpacing="0.3" className="text-white/55">INDIA</text>
+                  <text x="20" y="17" textAnchor="middle" fill="currentColor" fontSize="8" fontWeight="700" letterSpacing="0.5" className="text-white/80">FACC</text>
+                  <text x="20" y="27" textAnchor="middle" fill="currentColor" fontSize="4" letterSpacing="0.2" className="text-white/55">FELLOW ACC</text>
                 </svg>
               </div>
-              <span className="text-[8px] text-white/55 tracking-[0.12em] text-center leading-tight font-medium">NATIONAL<br/>MED. COMM.</span>
+              <span className="text-[8px] text-white/55 tracking-[0.12em] text-center leading-tight font-medium">FELLOW<br/>AM. COLLEGE</span>
             </div>
-            {/* NABH */}
+            {/* FSCAI */}
             <div className="flex flex-col items-center gap-2">
               <div className="w-14 h-14 border border-white/25 flex items-center justify-center">
                 <svg viewBox="0 0 40 40" className="w-10 h-10" fill="none">
                   <rect x="4" y="4" width="32" height="32" stroke="currentColor" strokeWidth="1.2" className="text-white/60" />
-                  <text x="20" y="18" textAnchor="middle" fill="currentColor" fontSize="7.5" fontWeight="700" letterSpacing="0.5" className="text-white/80">NABH</text>
-                  <text x="20" y="28" textAnchor="middle" fill="currentColor" fontSize="4" letterSpacing="0.2" className="text-white/55">ACCREDITED</text>
+                  <text x="20" y="17" textAnchor="middle" fill="currentColor" fontSize="7" fontWeight="700" letterSpacing="0.3" className="text-white/80">FSCAI</text>
+                  <text x="20" y="28" textAnchor="middle" fill="currentColor" fontSize="3.8" letterSpacing="0.2" className="text-white/55">INTERVENTIONAL</text>
                 </svg>
               </div>
-              <span className="text-[8px] text-white/55 tracking-[0.12em] text-center leading-tight font-medium">NABH<br/>ACCREDITED</span>
+              <span className="text-[8px] text-white/55 tracking-[0.12em] text-center leading-tight font-medium">FELLOW<br/>SCAI</span>
             </div>
-            {/* DPDPA */}
+            {/* RPVI */}
             <div className="flex flex-col items-center gap-2">
               <div className="w-14 h-14 border border-white/25 flex items-center justify-center">
                 <svg viewBox="0 0 40 40" className="w-10 h-10" fill="none">
                   <path d="M20 4 L34 10 L34 22 Q34 32 20 36 Q6 32 6 22 L6 10 Z" stroke="currentColor" strokeWidth="1.2" className="text-white/60" />
-                  <text x="20" y="20" textAnchor="middle" fill="currentColor" fontSize="6.5" fontWeight="700" letterSpacing="0.3" className="text-white/80">DPDPA</text>
-                  <text x="20" y="28" textAnchor="middle" fill="currentColor" fontSize="4" className="text-white/55">2023</text>
+                  <text x="20" y="20" textAnchor="middle" fill="currentColor" fontSize="7" fontWeight="700" letterSpacing="0.3" className="text-white/80">RPVI</text>
+                  <text x="20" y="28" textAnchor="middle" fill="currentColor" fontSize="3.8" className="text-white/55">VASCULAR</text>
                 </svg>
               </div>
-              <span className="text-[8px] text-white/55 tracking-[0.12em] text-center leading-tight font-medium">DATA<br/>PROTECTED</span>
+              <span className="text-[8px] text-white/55 tracking-[0.12em] text-center leading-tight font-medium">REGISTERED<br/>PHYSICIAN</span>
             </div>
-            {/* ABDM */}
+            {/* ABMS */}
             <div className="flex flex-col items-center gap-2">
               <div className="w-14 h-14 border border-white/25 flex items-center justify-center">
                 <svg viewBox="0 0 40 40" className="w-10 h-10" fill="none">
                   <circle cx="20" cy="20" r="18" stroke="currentColor" strokeWidth="1.2" className="text-white/60" />
-                  <path d="M12 24 Q20 12 28 24" stroke="currentColor" strokeWidth="1.2" className="text-white/65" strokeLinecap="round" />
-                  <text x="20" y="32" textAnchor="middle" fill="currentColor" fontSize="5.5" fontWeight="700" letterSpacing="0.3" className="text-white/80">ABDM</text>
+                  <text x="20" y="17" textAnchor="middle" fill="currentColor" fontSize="7.5" fontWeight="700" letterSpacing="0.3" className="text-white/80">ABMS</text>
+                  <text x="20" y="27" textAnchor="middle" fill="currentColor" fontSize="4" className="text-white/55">BOARD CERT.</text>
                 </svg>
               </div>
-              <span className="text-[8px] text-white/55 tracking-[0.12em] text-center leading-tight font-medium">AYUSHMAN<br/>BHARAT</span>
+              <span className="text-[8px] text-white/55 tracking-[0.12em] text-center leading-tight font-medium">BOARD<br/>CERTIFIED</span>
             </div>
           </div>
 
@@ -167,12 +167,12 @@ export function Footer() {
       <div className="border-t border-white/5">
         <div className="max-w-5xl mx-auto px-6 py-3">
           <p className="text-center text-[11px] font-sans tracking-[0.08em] lg:tracking-[0.12em] text-white/35 leading-relaxed">
-            &copy; {new Date().getFullYear()} CARDIAC |{" "}
+            &copy; {new Date().getFullYear()} SIERRA HEART & VASCULAR INSTITUTE |{" "}
             <Link href="/privacy" className="hover:text-white transition-colors">PRIVACY</Link>
             {" | "}
             <Link href="/terms" className="hover:text-white transition-colors">TERMS</Link>
             {" | "}
-            <span className="text-white/20">COLORADO SPRINGS CARDIOLOGY</span>
+            <span className="text-white/20">FRESNO, CALIFORNIA</span>
           </p>
         </div>
       </div>

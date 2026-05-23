@@ -25,10 +25,10 @@ const values = [
 ]
 
 const stats = [
-  { number: "50+", label: "Years of Service" },
-  { number: "25,000+", label: "Patients Treated" },
-  { number: "98%", label: "Patient Satisfaction" },
-  { number: "500+", label: "TAVR Procedures" },
+  { number: "17+", label: "Years of Experience" },
+  { number: "4.7★", label: "Patient Rating" },
+  { number: "3", label: "Hospital Affiliations" },
+  { number: "8+", label: "Research Publications" },
 ]
 
 export default function AboutPage() {
@@ -82,21 +82,22 @@ export default function AboutPage() {
                 OUR MISSION
               </p>
               <h2 className="text-4xl md:text-5xl font-sans font-light text-black mb-8 leading-[1.1]">
-                50 Years of Excellence<br />in Cardiac Care
+                A Higher Standard<br />of Cardiac Care
               </h2>
               <p className="text-black/70 text-[14px] lg:text-[16px] font-sans leading-[1.9] mb-5">
-                For over five decades, Cardiac has been at the forefront of cardiovascular medicine in
-                Colorado Springs. Our commitment to excellence, innovation, and compassionate care has
-                made us the region&apos;s leading cardiac practice.
+                Sierra Heart & Vascular Institute delivers advanced, evidence-based cardiovascular care
+                for patients across the Central Valley — from prevention through complex cardiac and
+                vascular intervention. Led by Dr. Kumar Sanam, MD, FACC, FSCAI, RPVI.
               </p>
               <p className="text-black/70 text-[14px] lg:text-[16px] font-sans leading-[1.9] mb-5">
-                We believe every patient deserves access to the most advanced cardiac treatments
-                available. Our team of board-certified cardiologists specializes in minimally invasive
-                procedures that offer faster recovery times and better outcomes.
+                Dr. Sanam brings over 17 years of cardiovascular expertise, fellowship-trained precision,
+                and a deeply personal approach to every patient. His subspecialty focus spans complex
+                coronary intervention, structural heart therapy, and vascular medicine.
               </p>
               <p className="text-black/70 text-[14px] lg:text-[16px] font-sans leading-[1.9] mb-10">
-                From preventive care to complex structural heart interventions, we provide
-                comprehensive cardiac services tailored to each patient&apos;s unique needs.
+                From a first cardiac consultation through structural heart surgery, heart failure
+                management, vascular intervention, and lifelong prevention — fully coordinated under
+                one roof in Fresno, California.
               </p>
               <Link
                 href="/contact"
@@ -197,7 +198,7 @@ export default function AboutPage() {
               Experience the Difference
             </h2>
             <p className="text-black/70 text-[16px] font-sans leading-relaxed mb-10">
-              Join the thousands of patients who have trusted Cardiac with their heart health.
+              Join the patients across the Central Valley who have trusted Sierra Heart & Vascular Institute with their cardiovascular health.
             </p>
             <Link
               href="/contact"

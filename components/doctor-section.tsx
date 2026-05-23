@@ -19,7 +19,7 @@ export function DoctorSection() {
         >
           <Image
             src="/images/doctor.jpg"
-            alt="Dr. James Mitchell, MD FACC FSCAI"
+            alt="Dr. Kumar Sanam, MD FACC FSCAI RPVI"
             fill
             className="object-cover object-top"
           />
@@ -39,26 +39,28 @@ export function DoctorSection() {
           </p>
 
           <h2 className="text-3xl lg:text-4xl font-sans font-light text-black leading-[1.1] mb-1 lg:mb-2">
-            Dr. James Mitchell
+            Dr. Kumar Sanam
           </h2>
           <p className="text-[#c4a35a] text-[12px] font-sans font-medium tracking-widest uppercase mb-4 lg:mb-6">
-            MD, FACC, FSCAI
+            MD, FACC, FSCAI, RPVI
           </p>
 
           <div className="w-8 h-px bg-black/15 mb-4 lg:mb-6" />
 
           <p className="text-[16px] font-normal text-black/80 leading-[1.85] font-sans mb-3 lg:mb-4">
-            Dr. James Mitchell is a board-certified interventional cardiologist with over two decades
-            of experience specializing in structural heart disease and complex coronary interventions.
-            He completed his fellowship training at the Cleveland Clinic.
+            Dr. Kumar Sanam is a board-certified interventional and structural cardiologist based in
+            Fresno, California, with over 17 years of experience in cardiovascular disease. He
+            specializes in complex coronary intervention, structural heart therapy, and vascular medicine.
           </p>
           <p className="text-[16px] font-normal text-black/80 leading-[1.85] font-sans mb-3 lg:mb-4">
-            He is a pioneer in transcatheter aortic valve replacement (TAVR) and was among the first
-            physicians in Colorado to perform Watchman left atrial appendage closure.
+            He completed his Interventional Cardiology Fellowship at the Medical College of Georgia /
+            Augusta University, following cardiovascular disease fellowship and residency training at
+            the University of Alabama at Birmingham.
           </p>
           <p className="hidden lg:block text-[16px] font-normal text-black/80 leading-[1.85] font-sans mb-8">
-            His philosophy is simple: every patient deserves the most advanced care available, delivered
-            with compassion and transparency.
+            Patients consistently describe Dr. Sanam as attentive, compassionate, and deeply
+            knowledgeable — a physician who takes a whole-person view of cardiovascular health and
+            takes the time to truly listen.
           </p>
 
           <div className="flex flex-wrap gap-4 mt-2 lg:mt-0">

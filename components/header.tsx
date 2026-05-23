@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { X } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 import { usePathname } from "next/navigation"
 
 const navLinks = [
@@ -90,14 +91,14 @@ export function Header() {
         <div className="flex items-center h-[64px] lg:h-[76px]">
           {/* Logo — left */}
           <Link href="/" className="flex-shrink-0 px-4 lg:px-6 h-full flex items-center">
-            <div>
-              <div className="text-[19px] lg:text-[19px] font-sans font-semibold tracking-[0.3em] text-white leading-none">
-                CARDIAC
-              </div>
-              <div className="text-[9px] lg:text-[9px] tracking-[0.45em] text-white/40 mt-0.5">
-                CARDIOLOGY
-              </div>
-            </div>
+            <Image
+              src="/images/sierrra-logo.png"
+              alt="Sierra Heart & Vascular Institute"
+              width={120}
+              height={48}
+              className="h-10 w-auto"
+              style={{ filter: "invert(1)" }}
+            />
           </Link>
 
           {/* Desktop Nav — pushed to right */}
@@ -193,8 +194,14 @@ export function Header() {
             {/* Logo */}
             <div className="absolute top-4 left-6">
               <Link href="/" onClick={() => setIsDrawerOpen(false)}>
-                <div className="text-[15px] font-sans font-semibold tracking-[0.3em] text-white">CARDIAC</div>
-                <div className="text-[7px] tracking-[0.45em] text-white/40 mt-0.5">CARDIOLOGY</div>
+                <Image
+                  src="/images/sierrra-logo.png"
+                  alt="Sierra Heart & Vascular Institute"
+                  width={90}
+                  height={36}
+                  className="h-8 w-auto"
+                  style={{ filter: "invert(1)" }}
+                />
               </Link>
             </div>
 
@@ -265,8 +272,8 @@ export function Header() {
               >
                 <p className="text-white/40 text-[13px] tracking-[0.16em] font-sans">
                   CALL US:{" "}
-                  <a href="tel:7199600363" className="text-[#c4a35a] hover:underline">
-                    719.960.0363
+                  <a href="tel:5592180076" className="text-[#c4a35a] hover:underline">
+                    (559) 218-0076
                   </a>
                 </p>
               </motion.div>

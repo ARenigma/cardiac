@@ -7,31 +7,31 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 const testimonials = [
   {
     id: 1,
-    name: "Robert K.",
-    location: "Colorado Springs, CO",
+    name: "Verified Patient",
+    location: "Fresno, CA · Healthgrades",
     quote:
-      "I can enjoy time with my family for the first time in years. The team at Cardiac gave me my life back — I came in barely able to walk and left with a new heart valve and a new outlook.",
+      "Dr. Sanam is a true 10-star doctor. After 4 years under his expert and personalized care, I feel significantly better and am twice as healthy and energetic as before.",
   },
   {
     id: 2,
-    name: "Denis G.",
-    location: "Pueblo, CO",
+    name: "Verified Patient",
+    location: "Fresno, CA · Healthgrades",
     quote:
-      "After being told I needed open-heart surgery, I found Cardiac. They offered me a minimally invasive option that changed everything. I was home in two days and back to my garden in a week.",
+      "Dr. Sanam takes the time to truly listen. He explained my condition clearly, walked me through every option, and made me feel like I was his only patient. Exceptional physician.",
   },
   {
     id: 3,
-    name: "Michael I.",
-    location: "Monument, CO",
+    name: "Verified Patient",
+    location: "Central Valley, CA · Healthgrades",
     quote:
-      "Fifty years of experience shows in every interaction. From my first consultation to my follow-up care, every step was handled with precision, expertise, and genuine human care.",
+      "From my very first consultation through my procedure and follow-up, every step was handled with precision and genuine compassion. I would not trust my heart to anyone else.",
   },
   {
     id: 4,
-    name: "Susan P.",
-    location: "Colorado Springs, CO",
+    name: "Verified Patient",
+    location: "Fresno, CA · Healthgrades",
     quote:
-      "I was terrified about my arrhythmia diagnosis. Dr. Mitchell explained everything clearly and without rushing me. The ablation procedure was smooth and my heart has been in normal rhythm ever since.",
+      "After being told I needed open-heart surgery elsewhere, Dr. Sanam offered a minimally invasive option that changed everything. I was back on my feet within days.",
   },
 ]
 

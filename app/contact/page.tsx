@@ -134,25 +134,20 @@ export default function ContactPage() {
                   {
                     icon: <Phone className="w-4 h-4 text-[#c4a35a]" />,
                     label: "Phone",
-                    lines: ["Tel: 719.960.0363", "Fax: 719.413.5966"],
-                  },
-                  {
-                    icon: <Mail className="w-4 h-4 text-[#c4a35a]" />,
-                    label: "Email",
-                    lines: ["info@cardiac.com"],
+                    lines: ["(559) 218-0076"],
                   },
                   {
                     icon: <Clock className="w-4 h-4 text-[#c4a35a]" />,
                     label: "Office Hours",
-                    lines: ["Monday – Friday: 8:00 AM – 5:00 PM", "Saturday: By Appointment"],
+                    lines: ["Hours Coming Soon"],
                   },
                   {
                     icon: <MapPin className="w-4 h-4 text-[#c4a35a]" />,
-                    label: "Locations",
+                    label: "Location",
                     lines: [
-                      "Woodmen Medical Plaza — 8890 N Union Blvd, Suite 250",
-                      "Union Medical Campus — 6071 E Woodmen Rd, Suite 200",
-                      "Colorado Springs, CO",
+                      "Sierra Heart & Vascular Institute",
+                      "Fresno, California",
+                      "Address Coming Soon",
                     ],
                   },
                 ].map((item) => (
@@ -271,8 +266,7 @@ export default function ContactPage() {
                         className={inputClass}
                       >
                         <option value="">Select a location</option>
-                        <option value="Woodmen Medical Plaza">Woodmen Medical Plaza</option>
-                        <option value="Union Medical Campus">Union Medical Campus</option>
+                        <option value="Sierra Heart & Vascular Institute, Fresno">Sierra Heart &amp; Vascular Institute, Fresno</option>
                       </select>
                     </div>
 
@@ -286,14 +280,16 @@ export default function ContactPage() {
                         className={inputClass}
                       >
                         <option value="">Select a service</option>
-                        <option value="TAVR">TAVR</option>
-                        <option value="MitraClip">MitraClip</option>
-                        <option value="Watchman">Watchman</option>
-                        <option value="PFO Closure">PFO Closure</option>
-                        <option value="Cardiac Catheterization">Cardiac Catheterization</option>
-                        <option value="Electrophysiology">Electrophysiology</option>
-                        <option value="General Cardiology">General Cardiology</option>
-                        <option value="Other">Other</option>
+                        <option value="Clinical Cardiology / General Consultation">Clinical Cardiology / General Consultation</option>
+                        <option value="Interventional Cardiology">Interventional Cardiology</option>
+                        <option value="Structural Heart / TAVR Evaluation">Structural Heart / TAVR Evaluation</option>
+                        <option value="Advanced Heart Failure">Advanced Heart Failure</option>
+                        <option value="Peripheral Vascular">Peripheral Vascular</option>
+                        <option value="Rhythm / Arrhythmia Management">Rhythm / Arrhythmia Management</option>
+                        <option value="Preventive Cardiology">Preventive Cardiology</option>
+                        <option value="Pre-Operative Cardiac Clearance">Pre-Operative Cardiac Clearance</option>
+                        <option value="Second Opinion">Second Opinion</option>
+                        <option value="Physician Referral">Physician Referral</option>
                       </select>
                     </div>
 
