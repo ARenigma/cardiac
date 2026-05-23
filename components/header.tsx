@@ -146,7 +146,7 @@ export function Header() {
       </header>
 
       {/* Desktop logo — fixed block at top of left column, aligns with header top */}
-      <Link href="/" className="fixed left-0 top-0 z-50 w-[163px] h-[76px] hidden lg:flex items-center justify-center p-3">
+      <Link href="/" className="fixed left-0 top-3 z-50 w-[163px] h-[100px] hidden lg:flex items-center justify-center p-2">
         <Image
           src="/images/sierrra-logo.png"
           alt="Sierra Heart & Vascular Institute"
@@ -164,7 +164,7 @@ export function Header() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -16 }}
             transition={{ duration: 0.3 }}
-            className="fixed left-0 top-[76px] z-40 hidden lg:block"
+            className="fixed left-0 top-[112px] z-40 hidden lg:block"
           >
             <div className="bg-black flex flex-col">
               {[
