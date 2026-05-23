@@ -30,7 +30,7 @@ export function LocationsSection() {
             FIND US
           </p>
           <h2 className="text-4xl md:text-5xl font-sans font-light text-black">
-            Our Locations
+            Our Location
           </h2>
         </motion.div>
 

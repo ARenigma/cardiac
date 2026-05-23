@@ -9,9 +9,9 @@ import { ChevronLeft, ChevronRight, Calendar } from "lucide-react"
 const blogPosts = [
   {
     id: 1,
-    title: "Understanding TAVR: A Revolution in Heart Valve Treatment",
+    title: "TAVR: Replacing a Heart Valve Without Open-Heart Surgery",
     excerpt:
-      "Transcatheter aortic valve replacement has transformed how we treat severe aortic stenosis. Learn how this catheter-based procedure is giving patients their lives back without open-heart surgery.",
+      "Transcatheter aortic valve replacement has transformed outcomes for patients with severe aortic stenosis. Dr. Sanam walks through who is a candidate, what the procedure involves, and what recovery looks like.",
     date: "March 15, 2026",
     category: "Procedures",
     image: "/images/blog-tavr.jpg",
@@ -29,21 +29,21 @@ const blogPosts = [
   },
   {
     id: 3,
-    title: "The Role of Diet in Cardiovascular Health",
+    title: "Beyond LDL: Why ApoB and Lp(a) Matter More Than You Think",
     excerpt:
-      "A heart-healthy diet is one of the most powerful tools in preventing and managing cardiovascular disease. Discover which dietary choices protect your heart and which ones put it at risk.",
+      "Standard cholesterol panels miss a significant portion of cardiovascular risk. Advanced lipid testing — ApoB, Lp(a), and LDL particle number — reveals hidden danger and guides more precise treatment decisions.",
     date: "March 5, 2026",
-    category: "Lifestyle",
+    category: "Prevention",
     image: "/images/blog-diet.jpg",
     href: "#",
   },
   {
     id: 4,
-    title: "New Advances in Arrhythmia Treatment",
+    title: "Impella-Supported High-Risk PCI: Protecting the Heart During Complex Procedures",
     excerpt:
-      "From high-density cardiac mapping to robotic ablation systems, the field of electrophysiology is advancing rapidly. Explore the cutting-edge therapies now available at Cardiac.",
+      "For patients with severely reduced heart function who require coronary intervention, Impella mechanical support allows Dr. Sanam's team to safely complete procedures that were once considered too dangerous.",
     date: "February 28, 2026",
-    category: "Research",
+    category: "Procedures",
     image: "/images/blog-arrhythmia.jpg",
     href: "#",
   },

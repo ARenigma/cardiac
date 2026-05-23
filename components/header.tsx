@@ -20,10 +20,13 @@ const drawerLinks = [
     name: "Services",
     href: "/services",
     subLinks: [
-      { name: "Heart Failure", href: "/conditions/heart-failure" },
-      { name: "Arrhythmia", href: "/conditions/arrhythmia" },
-      { name: "Coronary Artery Disease", href: "/conditions/coronary-artery" },
-      { name: "Structural Heart", href: "/conditions/structural-heart" },
+      { name: "Clinical Cardiology", href: "/services" },
+      { name: "Interventional Cardiology", href: "/services" },
+      { name: "Structural Heart / TAVR", href: "/services" },
+      { name: "Advanced Heart Failure", href: "/services" },
+      { name: "Peripheral Vascular", href: "/services" },
+      { name: "Rhythm Management", href: "/services" },
+      { name: "Preventive Cardiology", href: "/conditions/preventive-cardiology" },
     ],
   },
   {
@@ -94,10 +97,9 @@ export function Header() {
             <Image
               src="/images/sierrra-logo.png"
               alt="Sierra Heart & Vascular Institute"
-              width={120}
-              height={48}
-              className="h-10 w-auto"
-              style={{ filter: "invert(1)" }}
+              width={160}
+              height={64}
+              className="h-14 w-auto"
             />
           </Link>
 
@@ -197,10 +199,9 @@ export function Header() {
                 <Image
                   src="/images/sierrra-logo.png"
                   alt="Sierra Heart & Vascular Institute"
-                  width={90}
-                  height={36}
-                  className="h-8 w-auto"
-                  style={{ filter: "invert(1)" }}
+                  width={120}
+                  height={48}
+                  className="h-10 w-auto"
                 />
               </Link>
             </div>

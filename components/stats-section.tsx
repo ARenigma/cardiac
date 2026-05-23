@@ -3,10 +3,10 @@
 import { motion } from "framer-motion"
 
 const stats = [
-  { value: "17+", label: "Years of Experience" },
-  { value: "4.7★", label: "Patient Rating" },
-  { value: "3", label: "Hospital Affiliations" },
-  { value: "8+", label: "Research Publications" },
+  { value: "17", suffix: "+", label: "Years of Experience" },
+  { value: "4.7", suffix: "★", label: "Patient Rating" },
+  { value: "3", suffix: "", label: "Hospital Affiliations" },
+  { value: "8", suffix: "+", label: "Research Publications" },
 ]
 
 export function StatsSection() {
@@ -24,7 +24,7 @@ export function StatsSection() {
               className="text-center"
             >
               <p className="text-4xl md:text-5xl font-sans font-light text-black mb-1">
-                {stat.value}
+                {stat.value}<span className="text-2xl align-baseline">{stat.suffix}</span>
               </p>
               <p className="text-[12px] font-sans font-medium text-black/50 tracking-widest uppercase">
                 {stat.label}
