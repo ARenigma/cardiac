@@ -92,12 +92,12 @@ export function Header() {
         }`}
       >
         <div className="flex items-center h-[64px] lg:h-[76px]">
-          {/* Logo — same width as CTA panel (w-40 = 160px), full header height */}
-          <Link href="/" className="flex-shrink-0 w-40 h-[64px] lg:h-[76px] flex items-center justify-center px-4 py-2">
+          {/* Logo — matches CTA panel natural width (163px), full header height */}
+          <Link href="/" className="flex-shrink-0 w-[163px] h-[64px] lg:h-[76px] flex items-center justify-center px-3 py-1.5">
             <Image
               src="/images/sierrra-logo.png"
               alt="Sierra Heart & Vascular Institute"
-              width={160}
+              width={163}
               height={76}
               className="w-full h-full object-contain"
             />
@@ -155,7 +155,7 @@ export function Header() {
             transition={{ duration: 0.3 }}
             className="fixed left-0 top-[76px] z-40 hidden lg:block"
           >
-            <div className="bg-black flex flex-col w-40">
+            <div className="bg-black flex flex-col">
               {[
                 { label: "BOOK CONSULT", href: "/contact" },
                 { label: "PATIENT PORTAL", href: "/contact" },
