@@ -11,10 +11,12 @@ export default function ContactPage() {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
-    email: "",
     phone: "",
-    location: "",
+    email: "",
+    dateOfBirth: "",
+    insurancePlan: "",
     service: "",
+    referringPhysician: "",
     message: "",
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -41,10 +43,18 @@ export default function ContactPage() {
     })
 
     const payload = {
-      timestamp: submissionTimestamp,      // Column A — always first
+      timestamp: submissionTimestamp,
       date: now.toLocaleDateString("en-US"),
       time: now.toLocaleTimeString("en-US"),
-      ...formData,
+      firstName: formData.firstName,
+      lastName: formData.lastName,
+      phone: formData.phone,
+      email: formData.email,
+      dateOfBirth: formData.dateOfBirth,
+      insurancePlan: formData.insurancePlan,
+      service: formData.service,
+      referringPhysician: formData.referringPhysician,
+      message: formData.message,
     }
 
     if (!webhookUrl) {
@@ -195,7 +205,7 @@ export default function ContactPage() {
               ) : (
                 <div className="bg-[#f5f4f0] p-8 lg:p-10">
                   <h3 className="text-[18px] font-sans font-semibold text-black mb-6">
-                    Book an Appointment
+                    Request an Appointment
                   </h3>
                   {error && (
                     <div className="mb-5 p-3 bg-red-50 border border-red-200 text-red-600 text-[13px] font-sans">
@@ -203,6 +213,8 @@ export default function ContactPage() {
                     </div>
                   )}
                   <form onSubmit={handleSubmit} className="space-y-4">
+
+                    {/* Row 1: First Name + Last Name */}
                     <div className="grid md:grid-cols-2 gap-4">
                       <div>
                         <label className="block text-black/65 text-[11px] font-sans font-medium tracking-wider uppercase mb-1.5">
@@ -211,6 +223,7 @@ export default function ContactPage() {
                         <input
                           type="text"
                           required
+                          placeholder="First"
                           value={formData.firstName}
                           onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
                           className={inputClass}
@@ -223,6 +236,7 @@ export default function ContactPage() {
                         <input
                           type="text"
                           required
+                          placeholder="Last"
                           value={formData.lastName}
                           onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
                           className={inputClass}
@@ -230,56 +244,74 @@ export default function ContactPage() {
                       </div>
                     </div>
 
+                    {/* Row 2: Phone Number */}
+                    <div>
+                      <label className="block text-black/65 text-[11px] font-sans font-medium tracking-wider uppercase mb-1.5">
+                        Phone Number
+                      </label>
+                      <input
+                        type="tel"
+                        placeholder="(559) 000-0000"
+                        value={formData.phone}
+                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                        className={inputClass}
+                      />
+                    </div>
+
+                    {/* Row 3: Email Address */}
+                    <div>
+                      <label className="block text-black/65 text-[11px] font-sans font-medium tracking-wider uppercase mb-1.5">
+                        Email Address *
+                      </label>
+                      <input
+                        type="email"
+                        required
+                        placeholder="you@email.com"
+                        value={formData.email}
+                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                        className={inputClass}
+                      />
+                    </div>
+
+                    {/* Row 4: Date of Birth + Insurance Plan */}
                     <div className="grid md:grid-cols-2 gap-4">
                       <div>
                         <label className="block text-black/65 text-[11px] font-sans font-medium tracking-wider uppercase mb-1.5">
-                          Email *
+                          Date of Birth
                         </label>
                         <input
-                          type="email"
-                          required
-                          value={formData.email}
-                          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                          type="text"
+                          placeholder="dd/mm/yyyy"
+                          value={formData.dateOfBirth}
+                          onChange={(e) => setFormData({ ...formData, dateOfBirth: e.target.value })}
                           className={inputClass}
                         />
                       </div>
                       <div>
                         <label className="block text-black/65 text-[11px] font-sans font-medium tracking-wider uppercase mb-1.5">
-                          Phone
+                          Insurance Plan
                         </label>
                         <input
-                          type="tel"
-                          value={formData.phone}
-                          onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                          type="text"
+                          placeholder="e.g. Aetna, Medicare"
+                          value={formData.insurancePlan}
+                          onChange={(e) => setFormData({ ...formData, insurancePlan: e.target.value })}
                           className={inputClass}
                         />
                       </div>
                     </div>
 
+                    {/* Row 5: Reason for Visit */}
                     <div>
                       <label className="block text-black/65 text-[11px] font-sans font-medium tracking-wider uppercase mb-1.5">
-                        Preferred Location
-                      </label>
-                      <select
-                        value={formData.location}
-                        onChange={(e) => setFormData({ ...formData, location: e.target.value })}
-                        className={inputClass}
-                      >
-                        <option value="">Select a location</option>
-                        <option value="Sierra Heart & Vascular Institute, Fresno">Sierra Heart &amp; Vascular Institute, Fresno</option>
-                      </select>
-                    </div>
-
-                    <div>
-                      <label className="block text-black/65 text-[11px] font-sans font-medium tracking-wider uppercase mb-1.5">
-                        Service of Interest
+                        Reason for Visit
                       </label>
                       <select
                         value={formData.service}
                         onChange={(e) => setFormData({ ...formData, service: e.target.value })}
                         className={inputClass}
                       >
-                        <option value="">Select a service</option>
+                        <option value="">Select a service...</option>
                         <option value="Clinical Cardiology / General Consultation">Clinical Cardiology / General Consultation</option>
                         <option value="Interventional Cardiology">Interventional Cardiology</option>
                         <option value="Structural Heart / TAVR Evaluation">Structural Heart / TAVR Evaluation</option>
@@ -293,25 +325,40 @@ export default function ContactPage() {
                       </select>
                     </div>
 
+                    {/* Row 6: Referring Physician */}
                     <div>
                       <label className="block text-black/65 text-[11px] font-sans font-medium tracking-wider uppercase mb-1.5">
-                        Message
+                        Referring Physician (if applicable)
+                      </label>
+                      <input
+                        type="text"
+                        placeholder="Physician name & practice"
+                        value={formData.referringPhysician}
+                        onChange={(e) => setFormData({ ...formData, referringPhysician: e.target.value })}
+                        className={inputClass}
+                      />
+                    </div>
+
+                    {/* Row 7: Message / Clinical Notes */}
+                    <div>
+                      <label className="block text-black/65 text-[11px] font-sans font-medium tracking-wider uppercase mb-1.5">
+                        Message / Clinical Notes (Optional)
                       </label>
                       <textarea
-                        rows={3}
+                        rows={4}
                         value={formData.message}
                         onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                         className={`${inputClass} resize-none`}
-                        placeholder="Tell us about your symptoms or how we can help..."
+                        placeholder="Brief description of your concern..."
                       />
                     </div>
 
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full py-4 bg-black text-white text-[13px] font-sans font-semibold tracking-[0.18em] hover:bg-[#c4a35a] hover:text-black transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                      className="w-full py-4 bg-black text-white text-[13px] font-sans font-semibold tracking-[0.18em] hover:bg-[#c4a35a] hover:text-black transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                     >
-                      {isSubmitting ? "SENDING..." : "BOOK APPOINTMENT"}
+                      {isSubmitting ? "SENDING..." : "SUBMIT APPOINTMENT REQUEST →"}
                     </button>
                   </form>
                 </div>
@@ -325,7 +372,8 @@ export default function ContactPage() {
         GOOGLE SHEETS SETUP INSTRUCTIONS:
         1. Create a Google Sheet with these column headers in Row 1:
            A: Timestamp | B: Date | C: Time | D: First Name | E: Last Name
-           F: Email | G: Phone | H: Location | I: Service | J: Message
+           F: Phone | G: Email | H: Date of Birth | I: Insurance Plan
+           J: Reason for Visit | K: Referring Physician | L: Message
 
         2. Go to Extensions > Apps Script and paste:
 
@@ -334,8 +382,9 @@ export default function ContactPage() {
           var data = JSON.parse(e.postData.contents);
           sheet.appendRow([
             data.timestamp, data.date, data.time,
-            data.firstName, data.lastName, data.email,
-            data.phone, data.location, data.service, data.message
+            data.firstName, data.lastName, data.phone, data.email,
+            data.dateOfBirth, data.insurancePlan, data.service,
+            data.referringPhysician, data.message
           ]);
           return ContentService.createTextOutput(JSON.stringify({success:true}))
             .setMimeType(ContentService.MimeType.JSON);
