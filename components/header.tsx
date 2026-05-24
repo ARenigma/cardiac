@@ -37,14 +37,15 @@ const drawerLinks = [
       { name: "Our History", href: "/about#history" },
     ],
   },
-  {
-    name: "Our Team",
-    href: "/team",
-    subLinks: [
-      { name: "Physicians", href: "/team#physicians" },
-      { name: "Staff", href: "/team#staff" },
-    ],
-  },
+  // Re-enable when additional physicians join the practice
+  // {
+  //   name: "Our Team",
+  //   href: "/team",
+  //   subLinks: [
+  //     { name: "Physicians", href: "/team#physicians" },
+  //     { name: "Staff", href: "/team#staff" },
+  //   ],
+  // },
   {
     name: "Locations",
     href: "/locations",

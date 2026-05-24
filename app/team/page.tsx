@@ -112,11 +112,47 @@ export default function TeamPage() {
                   University, following cardiovascular disease fellowship and internal medicine
                   residency at the University of Alabama at Birmingham.
                 </p>
-                <p className="text-white/75 text-[15px] font-sans font-normal leading-[1.85] mb-8">
+                <p className="text-white/75 text-[15px] font-sans font-normal leading-[1.85] mb-6">
                   Dr. Sanam is affiliated with Community Regional Medical Center, St. Agnes Medical
-                  Center, and Clovis Community Medical Center. He has authored 8+ peer-reviewed
-                  publications in major cardiology journals.
+                  Center, and Clovis Community Medical Center.
                 </p>
+
+                {/* Peer-reviewed publications — sourced from myshavi.com */}
+                <div className="mb-8">
+                  <p className="text-[#c4a35a] text-[10px] font-sans font-medium tracking-[0.24em] uppercase mb-4">
+                    PEER-REVIEWED RESEARCH
+                  </p>
+                  <ul className="space-y-3">
+                    {[
+                      {
+                        title: "Renin-Angiotensin System Inhibition and Lower 30-Day All-Cause Readmission in Medicare Beneficiaries with Heart Failure",
+                        authors: "Sanam K, Bhatia V, Bajaj NS, et al.",
+                        journal: "American Journal of Cardiology",
+                      },
+                      {
+                        title: "Is There Still a Role for Renal Artery Stenting in the Management of Renovascular Hypertension? A Single-Center Experience",
+                        authors: "Khan Z, Tolia S, Sanam K, et al.",
+                        journal: "Cardiovascular Revascularization Medicine",
+                      },
+                      {
+                        title: "Long-Term Use of the Wearable Cardioverter Defibrillator in Patients with Explanted ICD",
+                        authors: "Kaspar G, Sanam K, et al.",
+                        journal: "International Journal of Cardiology · 2018",
+                      },
+                      {
+                        title: "Successful Fluoroless Radiofrequency Catheter Ablation of Supraventricular Tachycardia During Pregnancy",
+                        authors: "Kaspar G, Sanam K, et al.",
+                        journal: "Clinical Case Reports · 2018",
+                      },
+                    ].map((pub) => (
+                      <li key={pub.title} className="border-l border-white/15 pl-4">
+                        <p className="text-white/80 text-[13px] font-sans font-medium leading-[1.5] mb-0.5">{pub.title}</p>
+                        <p className="text-white/45 text-[11px] font-sans">{pub.authors}</p>
+                        <p className="text-[#c4a35a]/70 text-[11px] font-sans italic">{pub.journal}</p>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
 
                 {/* Credential tags */}
                 <div className="flex flex-wrap gap-2 mb-8">
