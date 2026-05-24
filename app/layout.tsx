@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Figtree, Playfair_Display } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import { SmoothScrollProvider } from '@/components/smooth-scroll-provider'
 import './globals.css'
 
@@ -51,6 +52,7 @@ export default function RootLayout({
           {children}
         </SmoothScrollProvider>
         {process.env.NODE_ENV === 'production' && <Analytics />}
+        <SpeedInsights />
       </body>
     </html>
   )
