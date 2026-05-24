@@ -407,7 +407,7 @@ export default function ContactPage() {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full py-4 bg-black text-white text-[13px] font-sans font-semibold tracking-[0.18em] hover:bg-[#c4a35a] hover:text-black transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                      className="w-full py-4 bg-black text-white text-[11px] sm:text-[13px] font-sans font-semibold tracking-[0.12em] sm:tracking-[0.18em] hover:bg-[#c4a35a] hover:text-black transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 whitespace-nowrap"
                     >
                       {isSubmitting ? "SENDING..." : "SUBMIT APPOINTMENT REQUEST →"}
                     </button>
