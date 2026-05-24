@@ -165,8 +165,8 @@ export function Footer() {
 
       {/* Copyright */}
       <div className="border-t border-white/5">
-        <div className="max-w-5xl mx-auto px-6 py-3 flex flex-col items-start gap-1">
-          <p className="text-[11px] font-sans tracking-[0.08em] lg:tracking-[0.12em] text-white/35 leading-relaxed">
+        <div className="max-w-5xl mx-auto px-6 py-3 flex flex-col sm:flex-row items-center justify-between gap-1">
+          <p className="text-[11px] font-sans tracking-[0.08em] lg:tracking-[0.12em] text-white/35 leading-relaxed text-center sm:text-left">
             &copy; 2026 Sierra Heart &amp; Vascular Institute | Fresno, California | All rights reserved.
           </p>
           {/* Backlink — subtle */}

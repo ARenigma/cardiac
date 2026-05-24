@@ -82,6 +82,15 @@ export default function ContactPage() {
   const inputClass =
     "w-full bg-[#f5f4f0] border border-black/10 px-4 py-3 text-black text-[13px] font-sans focus:border-[#c4a35a] focus:outline-none transition-colors placeholder:text-black/30"
 
+  // Auto-insert slashes: DD/MM/YYYY
+  const handleDateChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    let raw = e.target.value.replace(/\D/g, "").slice(0, 8)
+    let formatted = raw
+    if (raw.length > 4) formatted = raw.slice(0, 2) + "/" + raw.slice(2, 4) + "/" + raw.slice(4)
+    else if (raw.length > 2) formatted = raw.slice(0, 2) + "/" + raw.slice(2)
+    setFormData({ ...formData, dateOfBirth: formatted })
+  }
+
   return (
     <main className="min-h-screen bg-white">
       <Header />
@@ -283,7 +292,9 @@ export default function ContactPage() {
                           type="text"
                           placeholder="dd/mm/yyyy"
                           value={formData.dateOfBirth}
-                          onChange={(e) => setFormData({ ...formData, dateOfBirth: e.target.value })}
+                          onChange={handleDateChange}
+                          maxLength={10}
+                          inputMode="numeric"
                           className={inputClass}
                         />
                       </div>
