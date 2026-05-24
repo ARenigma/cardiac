@@ -25,10 +25,10 @@ const values = [
 ]
 
 const stats = [
-  { number: "17+", label: "Years of Experience" },
-  { number: "4.7★", label: "Patient Rating" },
-  { number: "3", label: "Hospital Affiliations" },
-  { number: "8+", label: "Research Publications" },
+  { value: "17",  suffix: "+", suffixClass: "text-3xl", label: "Years of Experience" },
+  { value: "4.7", suffix: "★", suffixClass: "text-lg",  label: "Patient Rating" },
+  { value: "3",   suffix: "",  suffixClass: "",          label: "Hospital Affiliations" },
+  { value: "8",   suffix: "+", suffixClass: "text-3xl", label: "Research Publications" },
 ]
 
 export default function AboutPage() {
@@ -175,7 +175,9 @@ export default function AboutPage() {
                 viewport={{ once: true }}
                 className="text-center"
               >
-                <p className="text-4xl md:text-5xl font-sans font-light text-black mb-2">{stat.number}</p>
+                <p className="text-4xl md:text-5xl font-sans font-light text-black mb-2">
+                  {stat.value}<span className={`${stat.suffixClass} align-baseline`}>{stat.suffix}</span>
+                </p>
                 <p className="text-[11px] font-sans font-medium text-black/40 tracking-[0.18em] uppercase">
                   {stat.label}
                 </p>

@@ -49,8 +49,10 @@ const drawerLinks = [
     name: "Locations",
     href: "/locations",
     subLinks: [
-      { name: "Woodmen Medical Plaza", href: "/locations#woodmen" },
-      { name: "Union Medical Campus", href: "/locations#union" },
+      { name: "Sierra Heart & Vascular — Fresno", href: "/locations" },
+      { name: "Community Regional Medical Center", href: "/locations" },
+      { name: "St. Agnes Medical Center", href: "/locations" },
+      { name: "Clovis Community Medical Center", href: "/locations" },
     ],
   },
   { name: "Contact", href: "/contact" },

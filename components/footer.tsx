@@ -165,8 +165,8 @@ export function Footer() {
 
       {/* Copyright */}
       <div className="border-t border-white/5">
-        <div className="max-w-5xl mx-auto px-6 py-3">
-          <p className="text-center text-[11px] font-sans tracking-[0.08em] lg:tracking-[0.12em] text-white/35 leading-relaxed">
+        <div className="max-w-5xl mx-auto px-6 py-3 flex flex-col sm:flex-row items-center justify-between gap-1">
+          <p className="text-[11px] font-sans tracking-[0.08em] lg:tracking-[0.12em] text-white/35 leading-relaxed text-center sm:text-left">
             &copy; {new Date().getFullYear()} SIERRA HEART & VASCULAR INSTITUTE |{" "}
             <Link href="/privacy" className="hover:text-white transition-colors">PRIVACY</Link>
             {" | "}
@@ -174,6 +174,18 @@ export function Footer() {
             {" | "}
             <span className="text-white/20">FRESNO, CALIFORNIA</span>
           </p>
+          {/* Backlink — subtle */}
+          <a
+            href="https://axionix.tech/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[10px] font-sans tracking-[0.1em] text-white/20 hover:text-white/50 transition-colors whitespace-nowrap flex items-center gap-1"
+          >
+            POWERED BY AXIONIX.TECH
+            <svg className="w-2.5 h-2.5 opacity-60" viewBox="0 0 10 10" fill="none" stroke="currentColor" strokeWidth="1.5">
+              <path d="M2 8L8 2M8 2H4M8 2V6" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </a>
         </div>
       </div>
     </footer>
