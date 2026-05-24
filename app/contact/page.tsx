@@ -84,28 +84,27 @@ export default function ContactPage() {
 
   const datePickerRef = useRef<HTMLInputElement>(null)
 
-  // Auto-insert slashes eagerly: slash appears right after 2nd and 4th digit
+  // Auto-insert slashes: "12/" after 2 digits, "12/05/" after 4 digits
+  // The format blocks already produce a trailing slash (slice(2) / slice(4) returns ""),
+  // so NO extra append needed — that was causing the double-slash bug.
   const handleDateChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const prev = formData.dateOfBirth
     const incoming = e.target.value
 
-    // Backspace — strip trailing slash too so deletion feels natural
+    // Backspace — strip any trailing slash so deletion feels natural
     if (incoming.length < prev.length) {
       const trimmed = incoming.endsWith("/") ? incoming.slice(0, -1) : incoming
       setFormData({ ...formData, dateOfBirth: trimmed })
       return
     }
 
-    // Strip everything non-digit from what was typed
     const digits = incoming.replace(/\D/g, "").slice(0, 8)
 
     let formatted = digits
+    // >= 2 digits: "DD/" (slice(2) is "" → appends nothing, slash is explicit separator)
     if (digits.length >= 2) formatted = digits.slice(0, 2) + "/" + digits.slice(2)
+    // >= 4 digits: "DD/MM/" (same principle for year portion)
     if (digits.length >= 4) formatted = digits.slice(0, 2) + "/" + digits.slice(2, 4) + "/" + digits.slice(4)
-
-    // Eagerly append trailing slash after DD (2 digits) and after DD/MM (4 digits)
-    if (digits.length === 2) formatted += "/"
-    if (digits.length === 4) formatted += "/"
 
     setFormData({ ...formData, dateOfBirth: formatted })
   }
@@ -326,24 +325,17 @@ export default function ContactPage() {
                             inputMode="numeric"
                             className={`${inputClass} pr-10`}
                           />
-                          {/* Calendar icon — clicking opens native date picker */}
-                          <button
-                            type="button"
-                            onClick={() => datePickerRef.current?.click()}
-                            className="absolute right-3 top-1/2 -translate-y-1/2 text-black/40 hover:text-[#c4a35a] transition-colors"
-                            aria-label="Open date picker"
-                          >
-                            <Calendar className="w-4 h-4" />
-                          </button>
-                          {/* Hidden native date input — only used for picker UI */}
-                          <input
-                            ref={datePickerRef}
-                            type="date"
-                            onChange={handleDatePickerSelect}
-                            className="absolute inset-0 opacity-0 pointer-events-none w-full"
-                            tabIndex={-1}
-                            aria-hidden="true"
-                          />
+                          {/* Icon sits on top (pointer-events-none); hidden date input fills the same zone and is clickable */}
+                          <div className="absolute right-0 top-0 bottom-0 w-10 flex items-center justify-center">
+                            <Calendar className="w-4 h-4 text-black/40 pointer-events-none relative z-10" />
+                            <input
+                              ref={datePickerRef}
+                              type="date"
+                              onChange={handleDatePickerSelect}
+                              className="absolute inset-0 opacity-0 cursor-pointer w-full"
+                              tabIndex={-1}
+                            />
+                          </div>
                         </div>
                       </div>
                       <div>
