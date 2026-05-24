@@ -1,11 +1,11 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useRef } from "react"
 import { motion } from "framer-motion"
 import Image from "next/image"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { MapPin, Phone, Mail, Clock } from "lucide-react"
+import { MapPin, Phone, Mail, Clock, Calendar } from "lucide-react"
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -82,13 +82,41 @@ export default function ContactPage() {
   const inputClass =
     "w-full bg-[#f5f4f0] border border-black/10 px-4 py-3 text-black text-[13px] font-sans focus:border-[#c4a35a] focus:outline-none transition-colors placeholder:text-black/30"
 
-  // Auto-insert slashes: DD/MM/YYYY
+  const datePickerRef = useRef<HTMLInputElement>(null)
+
+  // Auto-insert slashes eagerly: slash appears right after 2nd and 4th digit
   const handleDateChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    let raw = e.target.value.replace(/\D/g, "").slice(0, 8)
-    let formatted = raw
-    if (raw.length > 4) formatted = raw.slice(0, 2) + "/" + raw.slice(2, 4) + "/" + raw.slice(4)
-    else if (raw.length > 2) formatted = raw.slice(0, 2) + "/" + raw.slice(2)
+    const prev = formData.dateOfBirth
+    const incoming = e.target.value
+
+    // Backspace — strip trailing slash too so deletion feels natural
+    if (incoming.length < prev.length) {
+      const trimmed = incoming.endsWith("/") ? incoming.slice(0, -1) : incoming
+      setFormData({ ...formData, dateOfBirth: trimmed })
+      return
+    }
+
+    // Strip everything non-digit from what was typed
+    const digits = incoming.replace(/\D/g, "").slice(0, 8)
+
+    let formatted = digits
+    if (digits.length >= 2) formatted = digits.slice(0, 2) + "/" + digits.slice(2)
+    if (digits.length >= 4) formatted = digits.slice(0, 2) + "/" + digits.slice(2, 4) + "/" + digits.slice(4)
+
+    // Eagerly append trailing slash after DD (2 digits) and after DD/MM (4 digits)
+    if (digits.length === 2) formatted += "/"
+    if (digits.length === 4) formatted += "/"
+
     setFormData({ ...formData, dateOfBirth: formatted })
+  }
+
+  // When native date picker selects a date, convert YYYY-MM-DD → DD/MM/YYYY
+  const handleDatePickerSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const val = e.target.value // YYYY-MM-DD
+    if (val) {
+      const [year, month, day] = val.split("-")
+      setFormData({ ...formData, dateOfBirth: `${day}/${month}/${year}` })
+    }
   }
 
   return (
@@ -288,15 +316,35 @@ export default function ContactPage() {
                         <label className="block text-black/65 text-[11px] font-sans font-medium tracking-wider uppercase mb-1.5">
                           Date of Birth
                         </label>
-                        <input
-                          type="text"
-                          placeholder="dd/mm/yyyy"
-                          value={formData.dateOfBirth}
-                          onChange={handleDateChange}
-                          maxLength={10}
-                          inputMode="numeric"
-                          className={inputClass}
-                        />
+                        <div className="relative">
+                          <input
+                            type="text"
+                            placeholder="DD/MM/YYYY"
+                            value={formData.dateOfBirth}
+                            onChange={handleDateChange}
+                            maxLength={10}
+                            inputMode="numeric"
+                            className={`${inputClass} pr-10`}
+                          />
+                          {/* Calendar icon — clicking opens native date picker */}
+                          <button
+                            type="button"
+                            onClick={() => datePickerRef.current?.click()}
+                            className="absolute right-3 top-1/2 -translate-y-1/2 text-black/40 hover:text-[#c4a35a] transition-colors"
+                            aria-label="Open date picker"
+                          >
+                            <Calendar className="w-4 h-4" />
+                          </button>
+                          {/* Hidden native date input — only used for picker UI */}
+                          <input
+                            ref={datePickerRef}
+                            type="date"
+                            onChange={handleDatePickerSelect}
+                            className="absolute inset-0 opacity-0 pointer-events-none w-full"
+                            tabIndex={-1}
+                            aria-hidden="true"
+                          />
+                        </div>
                       </div>
                       <div>
                         <label className="block text-black/65 text-[11px] font-sans font-medium tracking-wider uppercase mb-1.5">
