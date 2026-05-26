@@ -38,7 +38,7 @@ export async function POST(req: NextRequest) {
   if (!res.ok) {
     const err = await res.text()
     console.error("[newsletter] Resend error:", err)
-    return NextResponse.json({ error: "Failed to send" }, { status: 500 })
+    return NextResponse.json({ error: "Failed to send", detail: err }, { status: 500 })
   }
 
   return NextResponse.json({ ok: true })
