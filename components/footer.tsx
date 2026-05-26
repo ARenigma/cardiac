@@ -24,10 +24,26 @@ const footerNavBottom = [
 
 export function Footer() {
   const [email, setEmail] = useState("")
+  const [status, setStatus] = useState<"idle" | "sending" | "done" | "error">("idle")
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    setEmail("")
+    setStatus("sending")
+    try {
+      const res = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      })
+      if (res.ok) {
+        setStatus("done")
+        setEmail("")
+      } else {
+        setStatus("error")
+      }
+    } catch {
+      setStatus("error")
+    }
   }
 
   return (
@@ -121,20 +137,32 @@ export function Footer() {
             onSubmit={handleSubmit}
             className="flex w-full max-w-sm mx-auto"
           >
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="SIGN UP FOR NEWSLETTER"
-              className="flex-1 px-4 py-3 bg-transparent border border-white/20 text-white text-[11px] tracking-[0.1em] placeholder:text-white/40 focus:outline-none focus:border-[#c4a35a] transition-colors"
-              required
-            />
-            <button
-              type="submit"
-              className="px-4 py-3 border border-white/20 border-l-0 text-white/60 hover:bg-[#c4a35a] hover:border-[#c4a35a] hover:text-black transition-all"
-            >
-              <ArrowRight className="w-4 h-4" />
-            </button>
+            {status === "done" ? (
+              <p className="text-[11px] font-sans tracking-[0.1em] text-[#c4a35a] py-3">
+                SUBSCRIBED — THANK YOU
+              </p>
+            ) : (
+              <>
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder={status === "error" ? "TRY AGAIN" : "SIGN UP FOR NEWSLETTER"}
+                  className={`flex-1 px-4 py-3 bg-transparent border text-white text-[11px] tracking-[0.1em] placeholder:text-white/40 focus:outline-none transition-colors ${
+                    status === "error" ? "border-red-400/60 placeholder:text-red-400/60" : "border-white/20 focus:border-[#c4a35a]"
+                  }`}
+                  required
+                  disabled={status === "sending"}
+                />
+                <button
+                  type="submit"
+                  disabled={status === "sending"}
+                  className="px-4 py-3 border border-white/20 border-l-0 text-white/60 hover:bg-[#c4a35a] hover:border-[#c4a35a] hover:text-black transition-all disabled:opacity-40"
+                >
+                  <ArrowRight className="w-4 h-4" />
+                </button>
+              </>
+            )}
           </motion.form>
 
           {/* Col 3 — Social icons disabled — re-enable when social accounts are active */}

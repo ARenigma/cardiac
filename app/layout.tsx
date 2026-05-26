@@ -17,8 +17,8 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: 'Cardiac | Advanced Cardiovascular Care',
-  description: 'Comprehensive cardiac care with over 50 years of experience in Colorado Springs. Specializing in structural heart procedures, heart failure, arrhythmia, and coronary artery disease.',
+  title: 'Sierra Heart & Vascular Institute | Dr. Kumar Sanam, MD',
+  description: 'Advanced cardiovascular care in Fresno, California. Dr. Kumar Sanam, MD, FACC, FSCAI, RPVI — specializing in interventional cardiology, structural heart / TAVR, heart failure, and vascular medicine.',
   generator: 'v0.app',
   icons: {
     icon: [

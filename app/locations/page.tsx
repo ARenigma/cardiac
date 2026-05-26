@@ -11,14 +11,14 @@ const locations = [
   {
     id: "fresno",
     name: "Sierra Heart & Vascular Institute",
-    address: "Address Coming Soon",
-    city: "Fresno, California",
+    address: "275 West Herndon Ave",
+    city: "Clovis, CA 93612",
     phone: "(559) 218-0076",
     fax: null,
     hours: [
       "Hours Coming Soon",
     ],
-    mapUrl: "https://maps.google.com/?q=Fresno+California",
+    mapUrl: "https://maps.google.com/?q=275+West+Herndon+Ave+Clovis+CA+93612",
   },
 ]
 

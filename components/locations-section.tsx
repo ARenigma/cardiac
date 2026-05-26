@@ -7,8 +7,8 @@ import Link from "next/link"
 const locations = [
   {
     name: "Sierra Heart & Vascular Institute",
-    address: "Address Coming Soon",
-    city: "Fresno, California",
+    address: "275 West Herndon Ave",
+    city: "Clovis, CA 93612",
     phone: "(559) 218-0076",
     hours: "Hours Coming Soon",
   },

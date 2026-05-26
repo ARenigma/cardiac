@@ -183,6 +183,11 @@ export default function ContactPage() {
                     lines: ["(559) 218-0076"],
                   },
                   {
+                    icon: <Mail className="w-4 h-4 text-[#c4a35a]" />,
+                    label: "Email",
+                    lines: ["admin@myshavi.com", "ksanam@myshavi.com"],
+                  },
+                  {
                     icon: <Clock className="w-4 h-4 text-[#c4a35a]" />,
                     label: "Office Hours",
                     lines: ["Hours Coming Soon"],
@@ -192,8 +197,8 @@ export default function ContactPage() {
                     label: "Location",
                     lines: [
                       "Sierra Heart & Vascular Institute",
-                      "Fresno, California",
-                      "Address Coming Soon",
+                      "275 West Herndon Ave",
+                      "Clovis, CA 93612",
                     ],
                   },
                 ].map((item) => (
