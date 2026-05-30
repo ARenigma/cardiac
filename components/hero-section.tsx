@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
-import { OptionA_LetterBlur } from "./hero-practice-name"
+import { HeroBrandName } from "./hero-practice-name"
 
 export function HeroSection() {
   const scrollToContent = () => {
@@ -28,25 +28,15 @@ export function HeroSection() {
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center">
 
-        {/* Practice name — GSAP letter-blur reveal */}
-        <OptionA_LetterBlur />
+        {/* Main headline — GSAP letter-blur, white, large */}
+        <HeroBrandName />
 
-        {/* Main word — same size/weight/colour as old "The New Era" headline */}
-        <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.4 }}
-          className="text-[38px] md:text-5xl lg:text-7xl font-sans font-light text-white leading-[1.05]"
-        >
-          Sierra
-        </motion.h1>
-
-        {/* Tagline — "The New Era" moved down in place of old subtitle */}
+        {/* Subtitle */}
         <motion.p
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.7 }}
-          className="mt-5 text-[13px] md:text-[15px] font-sans font-light text-white/65 tracking-[0.12em]"
+          transition={{ duration: 0.8, delay: 1.6 }}
+          className="mt-3 text-[13px] md:text-[15px] font-sans font-light text-white/60 tracking-[0.12em]"
         >
           The New Era of Cardiac Care
         </motion.p>

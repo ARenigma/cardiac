@@ -75,7 +75,7 @@ export function DoctorSection() {
               href="/contact"
               className="inline-flex items-center px-5 py-2.5 bg-black text-white text-[14px] font-sans font-semibold tracking-[0.15em] hover:bg-black/80 transition-colors"
             >
-              BOOK CONSULTATION
+              SCHEDULE APPOINTMENT
             </Link>
           </div>
         </motion.div>

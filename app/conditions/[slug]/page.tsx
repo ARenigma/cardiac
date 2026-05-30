@@ -262,7 +262,7 @@ export default function ConditionPage({ params }: { params: Promise<{ slug: stri
                     href="/contact"
                     className="inline-flex items-center gap-4 text-black text-[10px] font-sans font-semibold tracking-[0.18em] hover:opacity-55 transition-opacity group"
                   >
-                    SCHEDULE A CONSULTATION
+                    SCHEDULE APPOINTMENT
                     <span className="w-8 h-px bg-black group-hover:w-14 transition-all duration-300" />
                   </Link>
                 </div>

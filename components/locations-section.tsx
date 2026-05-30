@@ -77,7 +77,7 @@ export function LocationsSection() {
                   href="/contact"
                   className="inline-flex items-center gap-3 text-black text-[10px] font-sans font-medium tracking-[0.18em] hover:opacity-55 transition-opacity group"
                 >
-                  BOOK APPOINTMENT
+                  SCHEDULE APPOINTMENT
                   <span className="w-6 h-px bg-black group-hover:w-10 transition-all duration-300" />
                 </Link>
               </div>

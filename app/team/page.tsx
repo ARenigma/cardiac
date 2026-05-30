@@ -167,7 +167,7 @@ export default function TeamPage() {
                   href="/contact"
                   className="inline-flex items-center px-6 py-3 bg-[#c4a35a] text-black text-[13px] font-sans font-semibold tracking-[0.15em] hover:bg-white transition-colors self-start"
                 >
-                  BOOK A CONSULTATION
+                  SCHEDULE APPOINTMENT
                 </Link>
               </div>
             </div>
@@ -222,7 +222,7 @@ export default function TeamPage() {
               href="/contact"
               className="inline-flex items-center px-8 py-4 bg-[#c4a35a] text-black text-[13px] font-sans font-semibold tracking-wide hover:bg-white transition-colors"
             >
-              BOOK A CONSULTATION
+              SCHEDULE APPOINTMENT
             </Link>
           </motion.div>
         </div>

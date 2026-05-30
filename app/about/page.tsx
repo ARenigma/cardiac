@@ -103,7 +103,7 @@ export default function AboutPage() {
                 href="/contact"
                 className="inline-flex items-center gap-4 text-black text-[10px] font-sans font-medium tracking-[0.18em] hover:opacity-55 transition-opacity group"
               >
-                BOOK A CONSULTATION
+                SCHEDULE APPOINTMENT
                 <span className="w-8 h-px bg-black group-hover:w-14 transition-all duration-300" />
               </Link>
             </motion.div>
@@ -206,7 +206,7 @@ export default function AboutPage() {
               href="/contact"
               className="inline-flex items-center px-8 py-4 bg-black text-white text-[13px] font-sans font-semibold tracking-[0.15em] hover:bg-[#c4a35a] hover:text-black transition-colors"
             >
-              SCHEDULE YOUR VISIT
+              SCHEDULE APPOINTMENT
             </Link>
           </motion.div>
         </div>

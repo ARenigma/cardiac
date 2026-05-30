@@ -169,7 +169,7 @@ export default function ServicesPage() {
               LET&apos;S TALK ABOUT YOUR HEART
             </p>
             <h2 className="text-4xl md:text-5xl font-sans font-light text-white mb-6">
-              Schedule a Consultation
+              SCHEDULE APPOINTMENT
             </h2>
             <p className="text-white/70 text-[15px] lg:text-[16px] font-sans leading-relaxed mb-10">
               Dr. Sanam is currently accepting new patients. Urgent and same-day referrals accommodated promptly.
@@ -179,7 +179,7 @@ export default function ServicesPage() {
                 href="/contact"
                 className="inline-flex items-center justify-center px-8 py-4 bg-white text-black text-[13px] font-sans font-semibold tracking-[0.15em] hover:bg-[#c4a35a] transition-colors"
               >
-                BOOK A CONSULTATION
+                SCHEDULE APPOINTMENT
               </Link>
               <a
                 href="tel:5592180076"

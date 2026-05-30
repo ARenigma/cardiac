@@ -30,7 +30,7 @@ export function CTASection() {
               href="/contact"
               className="px-8 py-4 bg-white text-black text-[14px] font-sans font-semibold tracking-[0.15em] hover:bg-[#c4a35a] transition-colors w-full sm:w-auto"
             >
-              SCHEDULE CONSULTATION
+              SCHEDULE APPOINTMENT
             </Link>
             <a
               href="tel:5592180076"

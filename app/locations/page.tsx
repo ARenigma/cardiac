@@ -130,7 +130,7 @@ export default function LocationsPage() {
                     href="/contact"
                     className="inline-flex items-center gap-3 text-black text-[10px] font-sans font-medium tracking-[0.18em] hover:opacity-55 transition-opacity group"
                   >
-                    BOOK APPOINTMENT
+                    SCHEDULE APPOINTMENT
                     <span className="w-6 h-px bg-black group-hover:w-10 transition-all duration-300" />
                   </Link>
                 </div>
@@ -177,7 +177,7 @@ export default function LocationsPage() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-sans font-light text-white mb-6">
-              Schedule Your Visit
+              SCHEDULE APPOINTMENT
             </h2>
             <p className="text-white/70 text-[15px] lg:text-[16px] font-sans leading-relaxed mb-10">
               Dr. Sanam is currently accepting new patients. Call us or submit a request online.
