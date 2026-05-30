@@ -36,7 +36,7 @@ export function OptionA_LetterBlur() {
         <span
           key={i}
           className="letter text-[14px] md:text-[17px] lg:text-[20px]
-            font-sans font-semibold tracking-[0.42em] text-[#c4a35a]
+            font-sans font-black tracking-[0.42em] text-[#c4a35a]
             uppercase leading-none"
           style={{ opacity: 0, display: "inline-block" }}
         >
