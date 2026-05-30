@@ -132,9 +132,9 @@ export function Header() {
           <div className="lg:hidden ml-auto flex items-center gap-2 pr-4">
             <Link
               href="/contact"
-              className="px-4 py-2 text-[13px] font-sans font-semibold tracking-[0.1em] text-black bg-white hover:bg-[#c4a35a] transition-colors whitespace-nowrap"
+              className="px-3 py-2 text-[10px] font-sans font-semibold tracking-[0.05em] text-black bg-white hover:bg-[#c4a35a] transition-colors whitespace-nowrap"
             >
-              BOOK CONSULT
+              SCHEDULE APPOINTMENT
             </Link>
             <button
               onClick={() => setIsDrawerOpen(true)}
@@ -171,14 +171,14 @@ export function Header() {
           >
             <div className="bg-black flex flex-col">
               {[
-                { label: "BOOK CONSULT", href: "/contact" },
+                { label: "SCHEDULE APPOINTMENT", href: "/contact" },
                 { label: "PATIENT PORTAL", href: "/contact" },
                 { label: "UPLOAD IMAGES", href: "/contact" },
               ].map((cta) => (
                 <Link
                   key={cta.label}
                   href={cta.href}
-                  className="block px-6 py-4 border-b border-white/10 text-white text-[11px] font-sans font-medium tracking-[0.18em] hover:bg-white hover:text-black transition-all duration-200"
+                  className="block px-5 py-4 border-b border-white/10 text-white text-[10px] font-sans font-medium tracking-[0.1em] hover:bg-white hover:text-black transition-all duration-200"
                 >
                   {cta.label}
                 </Link>

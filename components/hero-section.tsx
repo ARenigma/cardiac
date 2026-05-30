@@ -31,25 +31,24 @@ export function HeroSection() {
         {/* Practice name — GSAP letter-blur reveal */}
         <OptionA_LetterBlur />
 
+        {/* Main word — same size/weight/colour as old "The New Era" headline */}
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.4 }}
-          className="text-[38px] md:text-5xl lg:text-7xl font-sans font-light text-white max-w-4xl leading-[1.05]"
+          className="text-[38px] md:text-5xl lg:text-7xl font-sans font-light text-white leading-[1.05]"
         >
-          The New Era
-          <br />
-          of Cardiac Care
+          Sierra
         </motion.h1>
 
+        {/* Tagline — "The New Era" moved down in place of old subtitle */}
         <motion.p
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.7 }}
-          className="mt-6 text-[12px] font-sans font-medium text-white/65 tracking-widest uppercase"
+          className="mt-5 text-[13px] md:text-[15px] font-sans font-light text-white/65 tracking-[0.12em]"
         >
-          Cardiovascular Medicine.{" "}
-          <strong className="text-white font-semibold">Reinvented.</strong>
+          The New Era of Cardiac Care
         </motion.p>
 
         {/* Mobile CTA */}
@@ -61,9 +60,9 @@ export function HeroSection() {
         >
           <Link
             href="/contact"
-            className="px-6 py-3 bg-white text-black text-[14px] font-sans font-semibold tracking-[0.1em] hover:bg-[#c4a35a] transition-colors"
+            className="px-4 py-3 bg-white text-black text-[11px] font-sans font-semibold tracking-[0.06em] hover:bg-[#c4a35a] transition-colors whitespace-nowrap"
           >
-            BOOK CONSULT
+            SCHEDULE APPOINTMENT
           </Link>
           <a
             href="tel:5592180076"
