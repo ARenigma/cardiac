@@ -35,8 +35,8 @@ export function OptionA_LetterBlur() {
       {text.split("").map((char, i) => (
         <span
           key={i}
-          className="letter text-[14px] md:text-[17px] lg:text-[20px]
-            font-sans font-black tracking-[0.42em] text-[#c4a35a]
+          className="letter text-[16px] md:text-[22px] lg:text-[26px]
+            font-sans font-black tracking-[0.18em] text-[#c4a35a]
             uppercase leading-none"
           style={{ opacity: 0, display: "inline-block" }}
         >
