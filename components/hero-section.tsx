@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
+import { OptionA_LetterBlur } from "./hero-practice-name"
 
 export function HeroSection() {
   const scrollToContent = () => {
@@ -27,15 +28,8 @@ export function HeroSection() {
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center">
 
-        {/* Practice name — prominent centre */}
-        <motion.p
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-[13px] md:text-[15px] font-sans font-semibold tracking-[0.35em] text-[#c4a35a] uppercase mb-5"
-        >
-          Sierra Heart &amp; Vascular Institute
-        </motion.p>
+        {/* Practice name — GSAP letter-blur reveal */}
+        <OptionA_LetterBlur />
 
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
