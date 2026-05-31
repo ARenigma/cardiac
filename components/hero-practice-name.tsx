@@ -31,7 +31,7 @@ export function HeroBrandName() {
   let letterIndex = 0
 
   return (
-    <div ref={ref} className="flex flex-wrap justify-center gap-x-[0.35em] mb-5 select-none px-4">
+    <div ref={ref} className="flex flex-wrap justify-center gap-x-[0.35em] mb-2 select-none px-4">
       {words.map((word, wi) => (
         <span key={wi} className="whitespace-nowrap inline-flex">
           {word.split("").map((char) => {
@@ -40,7 +40,7 @@ export function HeroBrandName() {
               <span
                 key={idx}
                 className="letter text-[19px] md:text-[30px] lg:text-[46px]
-                  font-sans font-light tracking-[0.04em] text-white
+                  font-sans font-semibold tracking-[0.04em] text-white
                   uppercase leading-[1.2]"
                 style={{ opacity: 0, display: "inline-block" }}
               >

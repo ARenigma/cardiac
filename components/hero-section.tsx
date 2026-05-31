@@ -36,7 +36,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.6 }}
-          className="mt-3 text-[13px] md:text-[15px] font-sans font-light text-white/60 tracking-[0.12em]"
+          className="mt-1 text-[13px] md:text-[15px] font-sans font-light text-white/60 tracking-[0.12em]"
         >
           The New Era of Cardiac Care
         </motion.p>
