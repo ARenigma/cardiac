@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react"
 import gsap from "gsap"
 
 // Hero brand name — letter-by-letter blur reveal
-// White, large, font-light — IS the main headline on the hero.
+// Words are grouped so flex-wrap never splits mid-word.
 export function HeroBrandName() {
   const ref = useRef<HTMLDivElement>(null)
   const text = "SIERRA HEART & VASCULAR INSTITUTE"
@@ -27,17 +27,27 @@ export function HeroBrandName() {
     )
   }, [])
 
+  const words = text.split(" ")
+  let letterIndex = 0
+
   return (
-    <div ref={ref} className="flex flex-wrap justify-center mb-5 select-none px-4">
-      {text.split("").map((char, i) => (
-        <span
-          key={i}
-          className="letter text-[22px] md:text-[32px] lg:text-[46px]
-            font-sans font-light tracking-[0.06em] text-white
-            uppercase leading-[1.15]"
-          style={{ opacity: 0, display: "inline-block" }}
-        >
-          {char === " " ? " " : char}
+    <div ref={ref} className="flex flex-wrap justify-center gap-x-[0.35em] mb-5 select-none px-4">
+      {words.map((word, wi) => (
+        <span key={wi} className="whitespace-nowrap inline-flex">
+          {word.split("").map((char) => {
+            const idx = letterIndex++
+            return (
+              <span
+                key={idx}
+                className="letter text-[19px] md:text-[30px] lg:text-[46px]
+                  font-sans font-light tracking-[0.04em] text-white
+                  uppercase leading-[1.2]"
+                style={{ opacity: 0, display: "inline-block" }}
+              >
+                {char}
+              </span>
+            )
+          })}
         </span>
       ))}
     </div>
