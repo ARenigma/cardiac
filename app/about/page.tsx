@@ -27,7 +27,7 @@ const values = [
 const stats = [
   { value: "17",  suffix: "+", suffixClass: "text-3xl", label: "Years of Experience" },
   { value: "4.7", suffix: "★", suffixClass: "text-lg",  label: "Patient Rating" },
-  { value: "3",   suffix: "",  suffixClass: "",          label: "Hospital Affiliations" },
+  { value: "4",   suffix: "",  suffixClass: "",          label: "Hospital Affiliations" },
   { value: "20",  suffix: "+", suffixClass: "text-3xl", label: "Research Publications" },
 ]
 

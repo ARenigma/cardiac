@@ -47,6 +47,10 @@ export function DoctorSection() {
 
           <div className="w-8 h-px bg-black/15 mb-4 lg:mb-6" />
 
+          <p className="text-[#c4a35a] text-[15px] font-sans font-medium italic leading-[1.7] mb-6">
+            &ldquo;Your heart is more than a muscle. It deserves a physician who treats the whole person behind it.&rdquo;
+          </p>
+
           <p className="text-[16px] font-normal text-black/80 leading-[1.85] font-sans mb-3 lg:mb-4">
             Dr. Kumar Sanam is a board-certified interventional and structural cardiologist based in
             Fresno, California, with over 17 years of experience in cardiovascular disease. He

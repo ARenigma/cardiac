@@ -12,20 +12,20 @@ const services = [
     subtitle: "Comprehensive Cardiac Evaluation",
     description:
       "The foundation of your cardiovascular care — comprehensive evaluation, diagnostic testing, and ongoing management of all cardiac conditions. Includes ECG, echocardiogram, stress testing, Holter monitoring, coronary calcium scoring, and pre-operative cardiac clearance.",
-    image: "/images/cond-heart-failure.jpg",
+    image: "/images/blog-visit.jpg",
     href: "/contact",
   },
   {
     title: "Interventional Cardiology",
     subtitle: "Advanced Catheter-Based Procedures",
     description:
-      "State-of-the-art catheter-based coronary procedures — from routine PCI to the highest complexity revascularization cases, including cardiogenic shock management. Coronary angiography, CTO intervention, rotational atherectomy, and Impella-supported high-risk PCI.",
+      "Advanced catheter-based coronary intervention across the full spectrum of complexity — from routine angiography and PCI to CTO intervention, rotational atherectomy, intracoronary lithotripsy, and Impella-supported high-risk PCI in cardiogenic shock. All procedures performed transradially (wrist access) when possible.",
     image: "/images/proc-room.jpg",
     href: "/contact",
   },
   {
     title: "Structural Heart Program",
-    subtitle: "Minimally Invasive Valve Therapies",
+    subtitle: "Minimally Invasive Valve & Structural Therapies",
     description:
       "Minimally invasive transcatheter therapies for complex valvular and structural heart disease. TAVR, MitraClip / TEER mitral valve repair, PFO & ASD closure, left atrial appendage occlusion (LAAO), and transcatheter tricuspid interventions — guided by our multidisciplinary heart team.",
     image: "/images/cond-structural.jpg",
@@ -35,16 +35,16 @@ const services = [
     title: "Advanced Heart Failure",
     subtitle: "Guideline-Directed Management",
     description:
-      "Guideline-directed management of all stages and phenotypes of heart failure — reducing hospitalizations and improving quality of life. GDMT optimization for HFrEF and HFpEF, cardiogenic shock & Impella support, CardioMEMS remote monitoring, and advanced cardiomyopathy care.",
-    image: "/images/cond-heart-failure.jpg",
+      "Comprehensive, guideline-directed management of all stages and phenotypes of heart failure. GDMT optimization for HFrEF and HFpEF, cardiogenic shock stabilization with Impella, CardioMEMS remote pressure monitoring, and advanced cardiomyopathy evaluation — with a goal of keeping patients out of the hospital and living fully.",
+    image: "/images/heart-failure.jpg",
     href: "/contact",
   },
   {
     title: "Peripheral Vascular",
     subtitle: "Endovascular & Limb Salvage",
     description:
-      "Comprehensive endovascular care for peripheral arterial and venous disease, with special emphasis on limb salvage and non-healing wound treatment. PAD, angioplasty and stenting, chronic limb-threatening ischemia, carotid artery disease, venous disease & DVT management.",
-    image: "/images/blog-arrhythmia.jpg",
+      "Comprehensive endovascular care for peripheral arterial and venous disease, with emphasis on limb salvage and restoration of circulation. PAD, chronic limb-threatening ischemia, peripheral angioplasty and stenting, carotid disease, venous disease, and DVT management.",
+    image: "/images/cond-coronary.jpg",
     href: "/contact",
   },
   {
@@ -59,8 +59,8 @@ const services = [
     title: "Preventive Cardiology",
     subtitle: "Stop Heart Disease Before It Starts",
     description:
-      "A proactive, data-driven approach using advanced lipid profiling — ApoB, Lp(a), LDL particle number — coronary artery calcium scoring, and inflammatory biomarker testing to identify hidden cardiovascular risk. PCSK9 inhibitors, GLP-1 agonists, SGLT-2 inhibitors, and personalized lifestyle medicine.",
-    image: "/images/acc-heart-failure.jpg",
+      "Advanced cardiovascular risk assessment using ApoB, Lp(a), LDL-P, coronary artery calcium scoring, and inflammatory biomarkers to identify hidden risk. PCSK9 inhibitors, GLP-1 agonists, SGLT-2 inhibitors, and hypertension management — guided by ACC/AHA guidelines. Because the best intervention is the one you never need.",
+    image: "/images/blog-diet.jpg",
     href: "/conditions/preventive-cardiology",
   },
 ]

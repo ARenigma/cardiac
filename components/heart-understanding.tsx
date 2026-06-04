@@ -31,11 +31,17 @@ export function HeartUnderstanding() {
             <h2 className="text-3xl font-sans font-light text-black leading-[1.15] mb-4">
               A deeper understanding<br />of your heart
             </h2>
-            <p className="text-black/75 text-[16px] font-sans font-normal leading-[1.85]">
-              The heart is four distinct systems working in perfect harmony — the pump, the rhythm,
-              the vessels, and the valves. Understanding which system is affected is the first step
-              toward the right treatment.
-            </p>
+            <>
+              <p className="text-black/75 text-[16px] font-sans font-normal leading-[1.85] mb-3">
+                The heart is one of the most remarkable structures in the human body — beating over 100,000 times a day, every day, without pause. Yet for all its endurance, it is also a system of extraordinary complexity.
+              </p>
+              <p className="text-black/75 text-[16px] font-sans font-normal leading-[1.85] mb-3">
+                At its core, the heart is four distinct systems working in perfect harmony — the pump, the rhythm, the vessels, and the valves. When all four are functioning as they should, most of us never give our hearts a second thought. But when one system falters, the effects can ripple through the rest.
+              </p>
+              <p className="text-black/75 text-[16px] font-sans font-normal leading-[1.85]">
+                Understanding which system is affected is the first step toward the right treatment.
+              </p>
+            </>
           </div>
         </motion.div>
       </div>
@@ -73,11 +79,17 @@ export function HeartUnderstanding() {
             <h2 className="text-5xl font-sans font-light text-black leading-[1.1] mb-5">
               A deeper understanding<br />of your heart
             </h2>
-            <p className="text-black/75 text-[16px] font-sans font-normal leading-[1.85] max-w-2xl">
-              The heart is four distinct systems working in perfect harmony — the pump, the rhythm,
-              the vessels, and the valves. Understanding which system is affected is the first step
-              toward the right treatment.
-            </p>
+            <>
+              <p className="text-black/75 text-[16px] font-sans font-normal leading-[1.85] max-w-2xl mb-3">
+                The heart is one of the most remarkable structures in the human body — beating over 100,000 times a day, every day, without pause. Yet for all its endurance, it is also a system of extraordinary complexity.
+              </p>
+              <p className="text-black/75 text-[16px] font-sans font-normal leading-[1.85] max-w-2xl mb-3">
+                At its core, the heart is four distinct systems working in perfect harmony — the pump, the rhythm, the vessels, and the valves. When all four are functioning as they should, most of us never give our hearts a second thought. But when one system falters, the effects can ripple through the rest.
+              </p>
+              <p className="text-black/75 text-[16px] font-sans font-normal leading-[1.85] max-w-2xl">
+                Understanding which system is affected is the first step toward the right treatment.
+              </p>
+            </>
           </div>
         </motion.div>
       </div>
