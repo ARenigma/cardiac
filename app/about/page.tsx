@@ -28,7 +28,7 @@ const stats = [
   { value: "17",  suffix: "+", suffixClass: "text-3xl", label: "Years of Experience" },
   { value: "4.7", suffix: "★", suffixClass: "text-lg",  label: "Patient Rating" },
   { value: "3",   suffix: "",  suffixClass: "",          label: "Hospital Affiliations" },
-  { value: "8",   suffix: "+", suffixClass: "text-3xl", label: "Research Publications" },
+  { value: "20",  suffix: "+", suffixClass: "text-3xl", label: "Research Publications" },
 ]
 
 export default function AboutPage() {
@@ -40,7 +40,7 @@ export default function AboutPage() {
       <section className="relative h-[65vh] flex items-end">
         <div className="absolute inset-0">
           <Image
-            src="/images/doctor.jpg"
+            src="/images/dr-sanam-2.png"
             alt="About Cardiac"
             fill
             className="object-cover object-[center_15%]"
@@ -71,7 +71,7 @@ export default function AboutPage() {
       {/* Mission */}
       <section className="py-24 lg:py-32 px-8 lg:px-16 bg-white">
         <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="max-w-4xl mx-auto">
             <motion.div
               initial={{ opacity: 0, x: -24 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -84,20 +84,8 @@ export default function AboutPage() {
               <h2 className="text-4xl md:text-5xl font-sans font-light text-black mb-8 leading-[1.1]">
                 A Higher Standard<br />of Cardiac Care
               </h2>
-              <p className="text-black/70 text-[14px] lg:text-[16px] font-sans leading-[1.9] mb-5">
-                Sierra Heart & Vascular Institute delivers advanced, evidence-based cardiovascular care
-                for patients across the Central Valley — from prevention through complex cardiac and
-                vascular intervention. Led by Dr. Kumar Sanam, MD, FACC, FSCAI, RPVI.
-              </p>
-              <p className="text-black/70 text-[14px] lg:text-[16px] font-sans leading-[1.9] mb-5">
-                Dr. Sanam brings over 17 years of cardiovascular expertise, fellowship-trained precision,
-                and a deeply personal approach to every patient. His subspecialty focus spans complex
-                coronary intervention, structural heart therapy, and vascular medicine.
-              </p>
               <p className="text-black/70 text-[14px] lg:text-[16px] font-sans leading-[1.9] mb-10">
-                From a first cardiac consultation through structural heart surgery, heart failure
-                management, vascular intervention, and lifelong prevention — fully coordinated under
-                one roof in Fresno, California.
+                Dr. Sanam founded Sierra Heart and Vascular Institute with a singular conviction: that exceptional cardiac care must be both technically excellent and deeply personal. That the physician-patient relationship is not a formality — it is the foundation upon which every successful outcome is built.
               </p>
               <Link
                 href="/contact"
@@ -106,21 +94,6 @@ export default function AboutPage() {
                 SCHEDULE APPOINTMENT
                 <span className="w-8 h-px bg-black group-hover:w-14 transition-all duration-300" />
               </Link>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 24 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="relative aspect-[3/4] overflow-hidden"
-            >
-              <Image
-                src="/images/cond-heart-failure.jpg"
-                alt="Cardiac care team"
-                fill
-                className="object-cover"
-              />
             </motion.div>
           </div>
         </div>

@@ -35,7 +35,7 @@ export function VideoSection() {
                 PAVING THE WAY
               </p>
               <h3 className="text-2xl md:text-3xl lg:text-4xl font-sans font-light text-white mb-8 max-w-2xl">
-                Modern cardiac care.<br />Without the hospital.
+                Modern cardiac care.
               </h3>
               <button
                 onClick={() => setIsPlaying(true)}

@@ -9,7 +9,7 @@ import { usePathname } from "next/navigation"
 
 const navLinks = [
   { name: "THE PRACTICE", href: "/about" },
-  { name: "THE CONDITIONS", href: "/conditions/heart-failure" },
+  { name: "THE CONDITIONS", href: "/conditions/coronary-artery" },
   { name: "THE PROCEDURES", href: "/services" },
   { name: "THE VISIT", href: "/locations" },
   { name: "CONTACT", href: "/contact" },
@@ -53,7 +53,8 @@ const drawerLinks = [
       { name: "Sierra Heart & Vascular — Fresno", href: "/locations" },
       { name: "Community Regional Medical Center", href: "/locations" },
       { name: "St. Agnes Medical Center", href: "/locations" },
-      { name: "Clovis Community Medical Center", href: "/locations" },
+      { name: "Clovis Area Medical Center", href: "/locations" },
+      { name: "Fresno Heart and Surgical Hospital", href: "/locations" },
     ],
   },
   { name: "Contact", href: "/contact" },

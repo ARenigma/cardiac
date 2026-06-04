@@ -185,12 +185,12 @@ export default function ContactPage() {
                   {
                     icon: <Mail className="w-4 h-4 text-[#c4a35a]" />,
                     label: "Email",
-                    lines: ["admin@myshavi.com", "ksanam@myshavi.com"],
+                    lines: ["admin@myshavi.com"],
                   },
                   {
                     icon: <Clock className="w-4 h-4 text-[#c4a35a]" />,
                     label: "Office Hours",
-                    lines: ["Hours Coming Soon"],
+                    lines: ["Monday – Friday: 8:00 AM – 5:00 PM"],
                   },
                   {
                     icon: <MapPin className="w-4 h-4 text-[#c4a35a]" />,

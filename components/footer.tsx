@@ -7,7 +7,7 @@ import { useState } from "react"
 
 const footerNavTop = [
   { name: "THE PRACTICE", href: "/about" },
-  { name: "THE CONDITIONS", href: "/conditions/heart-failure" },
+  { name: "THE CONDITIONS", href: "/conditions/coronary-artery" },
   { name: "THE PROCEDURES", href: "/services" },
   { name: "THE CLINIC VISIT", href: "/locations" },
   { name: "CONTACT", href: "/contact" },

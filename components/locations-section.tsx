@@ -10,7 +10,7 @@ const locations = [
     address: "275 West Herndon Ave",
     city: "Clovis, CA 93612",
     phone: "(559) 218-0076",
-    hours: "Hours Coming Soon",
+    hours: "Monday – Friday: 8:00 AM – 5:00 PM",
   },
 ]
 

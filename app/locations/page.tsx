@@ -16,7 +16,7 @@ const locations = [
     phone: "(559) 218-0076",
     fax: null,
     hours: [
-      "Hours Coming Soon",
+      "Monday – Friday: 8:00 AM – 5:00 PM",
     ],
     mapUrl: "https://maps.google.com/?q=275+West+Herndon+Ave+Clovis+CA+93612",
   },
@@ -155,8 +155,8 @@ export default function LocationsPage() {
             <h2 className="text-3xl font-sans font-light text-black mb-8">
               Where Dr. Sanam Operates
             </h2>
-            <div className="grid md:grid-cols-3 gap-6">
-              {["Community Regional Medical Center", "St. Agnes Medical Center", "Clovis Community Medical Center"].map((hospital) => (
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {["Community Regional Medical Center", "St. Agnes Medical Center", "Clovis Area Medical Center", "Fresno Heart and Surgical Hospital"].map((hospital) => (
                 <div key={hospital} className="bg-white p-6 border-l-2 border-[#c4a35a]">
                   <p className="text-black text-[14px] font-sans font-medium leading-snug">{hospital}</p>
                   <p className="text-black/45 text-[11px] font-sans mt-1">Fresno Area, California</p>

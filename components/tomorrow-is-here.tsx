@@ -35,6 +35,12 @@ export function TomorrowIsHere() {
               But despite all of our advancements, one thing remains the same: a successful outcome
               depends on a close relationship between patient and physician.
             </p>
+            <p className="text-white text-[16px] font-sans leading-[1.85] mt-4">
+              And the most powerful procedure we have? Prevention. Identifying risk before it becomes disease. Catching the warning signs before they become emergencies. Because the best cardiac intervention is the one you never need.
+            </p>
+            <p className="text-white text-[16px] font-sans leading-[1.85] mt-4">
+              Whether you are managing an existing condition or working to protect the heart you have — we are here, as your partner, every step of the way.
+            </p>
             <div className="mt-8">
               <Link
                 href="/about"

@@ -81,7 +81,7 @@ export default function TeamPage() {
             <div className="grid lg:grid-cols-2 gap-12 bg-white/5 p-8 lg:p-12">
               <div className="relative h-[500px] overflow-hidden">
                 <Image
-                  src="/images/doctor.jpg"
+                  src="/images/dr-sanam-1.png"
                   alt="Dr. Kumar Sanam, MD FACC FSCAI RPVI"
                   fill
                   className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
@@ -99,22 +99,20 @@ export default function TeamPage() {
 
                 <div className="w-8 h-px bg-[#c4a35a] mb-6" />
 
-                <p className="text-white/75 text-[15px] font-sans font-normal leading-[1.85] mb-4">
-                  Dr. Kumar Sanam is a board-certified interventional and structural cardiologist based
-                  in Fresno, California, with over 17 years of experience in cardiovascular disease.
-                  His subspecialty focus spans complex percutaneous coronary intervention, structural
-                  heart therapy, and vascular medicine.
+                <p className="text-[#c4a35a] text-[15px] font-sans font-medium italic leading-[1.7] mb-6">
+                  "Exceptional heart care begins with an exceptional relationship."
                 </p>
                 <p className="text-white/75 text-[15px] font-sans font-normal leading-[1.85] mb-4">
-                  He holds special expertise in TAVR, Impella-supported high-risk PCI, and the
-                  management of acute myocardial infarction and cardiogenic shock. He completed his
-                  Interventional Cardiology Fellowship at the Medical College of Georgia / Augusta
-                  University, following cardiovascular disease fellowship and internal medicine
-                  residency at the University of Alabama at Birmingham.
+                  Dr. Kumar Sanam is a board-certified interventional and structural cardiologist with over 17 years of experience in medicine. Based in Fresno, California, he brings subspecialty expertise in complex coronary intervention, structural heart therapy, and Heart Failure — combining the precision of advanced technique with the depth of a physician who truly knows his patients.
+                </p>
+                <p className="text-white/75 text-[15px] font-sans font-normal leading-[1.85] mb-4">
+                  Dr. Sanam completed his Interventional Cardiology Fellowship at the Medical College of Georgia / Augusta University, building on cardiovascular disease fellowship, heart transplant fellowship and residency training from some of the most rigorously trained programs in the country.
+                </p>
+                <p className="text-white/75 text-[15px] font-sans font-normal leading-[1.85] mb-4">
+                  But credentials only tell part of the story. Dr. Sanam is attentive, compassionate, and deeply knowledgeable — a physician who takes a whole-person view of cardiovascular health and takes the time to truly care.
                 </p>
                 <p className="text-white/75 text-[15px] font-sans font-normal leading-[1.85] mb-6">
-                  Dr. Sanam is affiliated with Community Regional Medical Center, St. Agnes Medical
-                  Center, and Clovis Community Medical Center.
+                  Because whether the goal is a life-saving intervention or preventing one from ever being necessary, Dr. Sanam believes the most powerful tool in cardiovascular medicine remains the same: a physician and patient who trust each other completely.
                 </p>
 
                 {/* Peer-reviewed publications — sourced from myshavi.com */}
