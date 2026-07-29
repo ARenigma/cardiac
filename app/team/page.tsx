@@ -81,7 +81,7 @@ export default function TeamPage() {
             <div className="grid lg:grid-cols-2 gap-12 bg-white/5 p-8 lg:p-12">
               <div className="relative h-[500px] overflow-hidden">
                 <Image
-                  src="/images/dr-sanam-1.png"
+                  src="/images/dr-sanam-1.jpg"
                   alt="Dr. Kumar Sanam, MD FACC FSCAI RPVI"
                   fill
                   className="object-cover object-top transition-transform duration-700 group-hover:scale-105"

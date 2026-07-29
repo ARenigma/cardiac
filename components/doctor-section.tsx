@@ -18,7 +18,7 @@ export function DoctorSection() {
           className="relative w-full h-[320px] lg:h-auto lg:min-h-[560px] overflow-hidden"
         >
           <Image
-            src="/images/dr-sanam-1.png"
+            src="/images/dr-sanam-1.jpg"
             alt="Dr. Kumar Sanam, MD FACC FSCAI RPVI"
             fill
             className="object-cover object-top"

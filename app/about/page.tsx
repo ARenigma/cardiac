@@ -39,7 +39,7 @@ export default function AboutPage() {
       <section className="relative h-[65vh] flex items-end">
         <div className="absolute inset-0">
           <Image
-            src="/images/dr-sanam-2.png"
+            src="/images/dr-sanam-2.jpg"
             alt="About Cardiac"
             fill
             className="object-cover object-[center_15%]"
