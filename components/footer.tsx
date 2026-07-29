@@ -9,16 +9,12 @@ const footerNavTop = [
   { name: "THE PRACTICE", href: "/about" },
   { name: "THE CONDITIONS", href: "/conditions/coronary-artery" },
   { name: "THE PROCEDURES", href: "/services" },
-  { name: "THE CLINIC VISIT", href: "/locations" },
+  { name: "THE VISIT", href: "/locations" },
   { name: "CONTACT", href: "/contact" },
 ]
 
 const footerNavBottom = [
-  { name: "THE DAY OF SURGERY", href: "/surgery" },
-  { name: "PATIENT RESOURCES", href: "/resources" },
-  { name: "BACKTALK", href: "/news" },
-  { name: "TESTIMONIALS", href: "/#testimonials" },
-  { name: "PATIENT PORTAL", href: "/portal" },
+  { name: "NEWS", href: "/news" },
   { name: "CONTACT", href: "/contact" },
 ]
 
@@ -113,7 +109,7 @@ export function Footer() {
                   <text x="20" y="28" textAnchor="middle" fill="currentColor" fontSize="3.8" className="text-white/55">VASCULAR</text>
                 </svg>
               </div>
-              <span className="text-[8px] text-white/55 tracking-[0.12em] text-center leading-tight font-medium">REGISTERED<br/>PHYSICIAN</span>
+              <span className="text-[8px] text-white/55 tracking-[0.12em] text-center leading-tight font-medium">REGISTERED PHYSICIAN<br/>IN VASCULAR INTERP.</span>
             </div>
             {/* ABMS */}
             <div className="flex flex-col items-center gap-2">

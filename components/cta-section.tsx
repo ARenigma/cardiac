@@ -20,7 +20,7 @@ export function CTASection() {
             Your heart health<br />starts here
           </h2>
           <p className="text-white text-[16px] font-normal font-sans leading-[1.85] max-w-xl mx-auto mb-12">
-            Schedule a consultation with our team of expert cardiologists. We are committed to
+            Schedule a consultation with Dr. Sanam and our cardiovascular care team. We are committed to
             providing you with the highest quality cardiac care using the latest minimally invasive
             techniques.
           </p>

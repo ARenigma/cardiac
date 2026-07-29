@@ -70,8 +70,7 @@ export default function LocationsPage() {
             className="text-black/70 text-[15px] lg:text-[16px] font-sans leading-[1.9] max-w-3xl mb-16"
           >
             Sierra Heart & Vascular Institute serves patients across Fresno and the greater Central
-            Valley of California. Our full address and hours will be published shortly — please call
-            us to schedule your visit.
+            Valley of California. We welcome new patients and same-day referrals.
           </motion.p>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -159,7 +158,7 @@ export default function LocationsPage() {
               Where Dr. Sanam Operates
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {["Community Regional Medical Center", "St. Agnes Medical Center", "Clovis Area Medical Center", "Fresno Heart and Surgical Hospital"].map((hospital) => (
+              {["Community Regional Medical Center", "St. Agnes Medical Center", "Clovis Community Medical Center", "Fresno Heart and Surgical Hospital"].map((hospital) => (
                 <div key={hospital} className="bg-white p-6 border-l-2 border-[#c4a35a]">
                   <p className="text-black text-[14px] font-sans font-medium leading-snug">{hospital}</p>
                   <p className="text-black/45 text-[11px] font-sans mt-1">Fresno Area, California</p>
@@ -184,7 +183,7 @@ export default function LocationsPage() {
               INSURANCE
             </p>
             <h2 className="text-3xl md:text-4xl font-sans font-light text-black mb-6">
-              Insurance Partner
+              Insurance Partners
             </h2>
             <p className="text-black/70 text-[15px] lg:text-[16px] font-sans leading-[1.9] mb-6">
               We accept all major insurance plans. However, we advise patients to confirm coverage with our office prior to their appointment. Please bring your insurance card and any necessary documentation to ensure a smooth billing process.

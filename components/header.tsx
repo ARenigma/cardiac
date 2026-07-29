@@ -53,7 +53,7 @@ const drawerLinks = [
       { name: "Sierra Heart & Vascular — Fresno", href: "/locations" },
       { name: "Community Regional Medical Center", href: "/locations" },
       { name: "St. Agnes Medical Center", href: "/locations" },
-      { name: "Clovis Area Medical Center", href: "/locations" },
+      { name: "Clovis Community Medical Center", href: "/locations" },
       { name: "Fresno Heart and Surgical Hospital", href: "/locations" },
     ],
   },

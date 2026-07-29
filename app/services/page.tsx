@@ -20,16 +20,16 @@ const services = [
     subtitle: "Advanced Catheter-Based Procedures",
     description:
       "Advanced catheter-based coronary intervention across the full spectrum of complexity — from routine angiography and PCI to CTO intervention, rotational atherectomy, intracoronary lithotripsy, and Impella-supported high-risk PCI in cardiogenic shock. All procedures performed transradially (wrist access) when possible.",
-    image: "/images/proc-room.jpg",
-    href: "/contact",
+    image: "/images/surgery-structural.jpg",
+    href: "/conditions/coronary-artery",
   },
   {
     title: "Structural Heart Program",
     subtitle: "Minimally Invasive Valve & Structural Therapies",
     description:
       "Minimally invasive transcatheter therapies for complex valvular and structural heart disease. TAVR, MitraClip / TEER mitral valve repair, PFO & ASD closure, left atrial appendage occlusion (LAAO), and transcatheter tricuspid interventions — guided by our multidisciplinary heart team.",
-    image: "/images/surgery-structural.jpg",
-    href: "/contact",
+    image: "/images/cond-structural-new.jpg",
+    href: "/conditions/structural-heart",
   },
   {
     title: "Advanced Heart Failure",
@@ -37,7 +37,7 @@ const services = [
     description:
       "Comprehensive, guideline-directed management of all stages and phenotypes of heart failure. Medication optimization to strengthen the heart for HFrEF and HFpEF, cardiogenic shock stabilization with Impella, CardioMEMS remote pressure monitoring, and advanced cardiomyopathy evaluation — with a goal of keeping patients out of the hospital and living fully.",
     image: "/images/heart-failure.jpg",
-    href: "/contact",
+    href: "/conditions/heart-failure",
   },
   {
     title: "Peripheral Vascular",
@@ -45,7 +45,7 @@ const services = [
     description:
       "Comprehensive endovascular care for peripheral arterial and venous disease, with emphasis on limb salvage and restoration of circulation. PAD, chronic limb-threatening ischemia, peripheral angioplasty and stenting, carotid disease, venous disease, and DVT management.",
     image: "/images/cond-coronary.jpg",
-    href: "/contact",
+    href: "/conditions/peripheral-artery",
   },
   {
     title: "Rhythm Management",
@@ -53,14 +53,14 @@ const services = [
     description:
       "Comprehensive evaluation and management of all major cardiac arrhythmias — from atrial fibrillation to ventricular rhythm disorders. Rate and rhythm strategy for AFib, anticoagulation management, cardioversion, pacemaker & ICD coordination, and catheter ablation referral.",
     image: "/images/cond-arrhythmia.jpg",
-    href: "/contact",
+    href: "/conditions/arrhythmia",
   },
   {
     title: "Preventive Cardiology",
     subtitle: "Stop Heart Disease Before It Starts",
     description:
       "Advanced cardiovascular risk assessment using ApoB, Lp(a), LDL-P, coronary artery calcium scoring, and inflammatory biomarkers to identify hidden risk. PCSK9 inhibitors, GLP-1 agonists, SGLT-2 inhibitors, and hypertension management — guided by ACC/AHA guidelines. Because the best intervention is the one you never need.",
-    image: "/images/blog-diet.jpg",
+    image: "/images/happy-faces-1.jpg",
     href: "/conditions/preventive-cardiology",
   },
 ]
@@ -75,7 +75,7 @@ export default function ServicesPage() {
         <div className="absolute inset-0">
           <Image
             src="/images/proc-room.jpg"
-            alt="Sierra Heart & Vascular Institute procedure laboratory"
+            alt="Sierra Heart & Vascular Institute vascular ultrasound"
             fill
             className="object-cover"
             priority

@@ -69,7 +69,7 @@ export function VideoSection() {
         className="max-w-4xl mx-auto px-8 lg:px-16 pt-12 lg:pt-16 text-center"
       >
         <p className="text-white/70 text-[15px] lg:text-[16px] font-sans font-normal leading-[1.85]">
-          Surgical and nonsurgical treatment of the heart have advanced dramatically. Many complex
+          Surgical and nonsurgical treatments of the heart have advanced dramatically. Many complex
           cardiac procedures are now performed through minimally invasive catheter-based techniques —
           meaning less pain, faster recovery, and a return to the quality of life you deserve.
         </p>

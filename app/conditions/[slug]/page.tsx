@@ -90,7 +90,7 @@ const conditions = {
     title: "Structural Heart Disease",
     subtitle: "Heart Valve & Structure Conditions",
     category: "THE VALVES",
-    image: "/images/surgery-structural.jpg",
+    image: "/images/cond-structural-new.jpg",
     description:
       "Structural heart disease refers to defects or abnormalities in the heart's valves, walls, or chambers. These conditions can be congenital or develop over time due to wear and disease. Our Structural Heart Program offers advanced transcatheter solutions — TAVR, MitraClip, Watchman, and more — many of which require no open surgery.",
     symptoms: [
@@ -114,7 +114,7 @@ const conditions = {
     title: "Peripheral Artery Disease",
     subtitle: "Endovascular & Limb Salvage Therapy",
     category: "THE VESSELS",
-    image: "/images/cond-coronary.jpg",
+    image: "/images/cond-blood-vessel.jpg",
     description:
       "Peripheral artery disease (PAD) occurs when narrowed arteries reduce blood flow to the limbs — most often the legs. Left untreated, PAD can progress to chronic limb-threatening ischemia, non-healing wounds, and limb loss. Dr. Sanam offers a full range of endovascular therapies aimed at restoring circulation and preserving limb function.",
     symptoms: [
@@ -138,7 +138,7 @@ const conditions = {
     title: "Preventive Cardiology",
     subtitle: "Stop Heart Disease Before It Starts",
     category: "PREVENTION",
-    image: "/images/acc-heart-failure.jpg",
+    image: "/images/running.jpg",
     description:
       "Dr. Sanam takes a proactive, data-driven approach to cardiovascular prevention. Using advanced lipid profiling — including ApoB, Lp(a), and LDL particle number — alongside coronary artery calcium scoring and inflammatory biomarker testing, we identify hidden cardiovascular risk that standard screening misses. Whether you are managing multiple risk factors, have a strong family history of heart disease, or are a post-MI patient working to prevent a second event, our program creates a personalized, aggressive prevention strategy guided by the most current ACC/AHA guidelines.",
     symptoms: [

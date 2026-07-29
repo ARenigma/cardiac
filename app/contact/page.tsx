@@ -109,12 +109,12 @@ export default function ContactPage() {
     setFormData({ ...formData, dateOfBirth: formatted })
   }
 
-  // When native date picker selects a date, convert YYYY-MM-DD → DD/MM/YYYY
+  // When native date picker selects a date, convert YYYY-MM-DD → MM/DD/YYYY
   const handleDatePickerSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
     const val = e.target.value // YYYY-MM-DD
     if (val) {
       const [year, month, day] = val.split("-")
-      setFormData({ ...formData, dateOfBirth: `${day}/${month}/${year}` })
+      setFormData({ ...formData, dateOfBirth: `${month}/${day}/${year}` })
     }
   }
 
@@ -126,8 +126,8 @@ export default function ContactPage() {
       <section className="relative h-[45vh] flex items-end">
         <div className="absolute inset-0">
           <Image
-            src="/images/blog-heart-failure.jpg"
-            alt="Contact Cardiac"
+            src="/images/sierra.png"
+            alt="Sierra Heart & Vascular Institute"
             fill
             className="object-cover"
             priority
@@ -323,7 +323,7 @@ export default function ContactPage() {
                         <div className="relative">
                           <input
                             type="text"
-                            placeholder="DD/MM/YYYY"
+                            placeholder="MM/DD/YYYY"
                             value={formData.dateOfBirth}
                             onChange={handleDateChange}
                             maxLength={10}
@@ -408,6 +408,10 @@ export default function ContactPage() {
                         placeholder="Brief description of your concern..."
                       />
                     </div>
+
+                    <p className="text-black/45 text-[11px] font-sans leading-relaxed border-l-2 border-[#c4a35a] pl-3">
+                      Do not submit urgent or sensitive medical information through this form. For a medical emergency, call 911.
+                    </p>
 
                     <button
                       type="submit"
