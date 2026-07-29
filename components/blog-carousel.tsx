@@ -177,13 +177,9 @@ export function BlogCarousel() {
                   <p className="text-white text-[15px] font-sans font-normal leading-[1.8] mb-5">
                     {p.excerpt}
                   </p>
-                  <Link
-                    href={p.href}
-                    className="inline-flex items-center gap-3 text-white text-[12px] font-sans font-medium tracking-[0.18em] hover:text-[#c4a35a] transition-colors group"
-                  >
-                    READ ARTICLE
-                    <span className="w-6 h-px bg-current group-hover:w-10 transition-all duration-300" />
-                  </Link>
+                  <span className="inline-flex items-center gap-3 text-white/30 text-[12px] font-sans font-medium tracking-[0.18em] cursor-default select-none">
+                    COMING SOON
+                  </span>
                 </div>
               </div>
             ))}
@@ -241,25 +237,18 @@ export function BlogCarousel() {
               <p className="text-white text-[16px] font-sans font-normal leading-[1.85] mb-7">
                 {post.excerpt}
               </p>
-              <Link
-                href={post.href}
-                className="inline-flex items-center gap-4 text-white text-[12px] font-sans font-medium tracking-[0.18em] hover:text-[#c4a35a] transition-colors self-start group"
-              >
-                READ ARTICLE
-                <span className="w-8 h-px bg-current group-hover:w-14 transition-all duration-300" />
-              </Link>
+              <span className="inline-flex items-center gap-4 text-white/30 text-[12px] font-sans font-medium tracking-[0.18em] self-start cursor-default select-none">
+                COMING SOON
+              </span>
             </div>
           </motion.article>
         </AnimatePresence>
 
         {/* All posts link */}
         <div className="mt-8 pt-8 border-t border-white/8 text-center">
-          <Link
-            href="#"
-            className="text-white/50 text-[12px] font-sans font-medium tracking-widest hover:text-white transition-colors"
-          >
-            VIEW ALL ARTICLES
-          </Link>
+          <span className="text-white/20 text-[12px] font-sans font-medium tracking-widest cursor-default select-none">
+            MORE ARTICLES COMING SOON
+          </span>
         </div>
       </div>
     </section>
