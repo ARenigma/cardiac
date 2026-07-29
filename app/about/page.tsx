@@ -26,7 +26,6 @@ const values = [
 
 const stats = [
   { value: "17",  suffix: "+", suffixClass: "text-3xl", label: "Years of Experience" },
-  { value: "4.7", suffix: "★", suffixClass: "text-lg",  label: "Patient Rating" },
   { value: "4",   suffix: "",  suffixClass: "",          label: "Hospital Affiliations" },
   { value: "20",  suffix: "+", suffixClass: "text-3xl", label: "Research Publications" },
 ]
@@ -85,7 +84,7 @@ export default function AboutPage() {
                 A Higher Standard<br />of Cardiac Care
               </h2>
               <p className="text-black/70 text-[14px] lg:text-[16px] font-sans leading-[1.9] mb-10">
-                Dr. Sanam founded Sierra Heart and Vascular Institute with a singular conviction: that exceptional cardiac care must be both technically excellent and deeply personal. That the physician-patient relationship is not a formality — it is the foundation upon which every successful outcome is built.
+                Dr. Sanam founded Sierra Heart and Vascular Institute with a singular conviction that exceptional cardiac care must be both technically excellent and deeply personal. That the physician-patient relationship is not a formality — it is the foundation upon which every successful outcome is built.
               </p>
               <Link
                 href="/contact"

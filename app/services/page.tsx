@@ -35,7 +35,7 @@ const services = [
     title: "Advanced Heart Failure",
     subtitle: "Guideline-Directed Management",
     description:
-      "Comprehensive, guideline-directed management of all stages and phenotypes of heart failure. GDMT optimization for HFrEF and HFpEF, cardiogenic shock stabilization with Impella, CardioMEMS remote pressure monitoring, and advanced cardiomyopathy evaluation — with a goal of keeping patients out of the hospital and living fully.",
+      "Comprehensive, guideline-directed management of all stages and phenotypes of heart failure. Medication optimization to strengthen the heart for HFrEF and HFpEF, cardiogenic shock stabilization with Impella, CardioMEMS remote pressure monitoring, and advanced cardiomyopathy evaluation — with a goal of keeping patients out of the hospital and living fully.",
     image: "/images/heart-failure.jpg",
     href: "/contact",
   },
@@ -109,7 +109,7 @@ export default function ServicesPage() {
             Sierra Heart & Vascular Institute offers a full spectrum of cardiovascular services —
             from clinical evaluation and preventive cardiology through complex structural heart
             procedures and vascular intervention. Dr. Sanam brings subspecialty-level expertise
-            across all seven service lines, coordinated under one roof in Fresno, California.
+            across all service lines, coordinated under one roof in Fresno, California.
           </p>
         </div>
       </section>
@@ -182,10 +182,10 @@ export default function ServicesPage() {
                 SCHEDULE APPOINTMENT
               </Link>
               <a
-                href="tel:5592180076"
+                href="tel:5592033600"
                 className="inline-flex items-center justify-center px-8 py-4 border border-white/25 text-white text-[13px] font-sans font-medium tracking-[0.15em] hover:border-white transition-colors"
               >
-                CALL (559) 218-0076
+                CALL (559) 203-3600
               </a>
             </div>
           </motion.div>

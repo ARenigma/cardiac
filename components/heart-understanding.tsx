@@ -16,12 +16,12 @@ export function HeartUnderstanding() {
           viewport={{ once: true }}
           className="flex flex-col items-center gap-6"
         >
-          <div className="relative w-[180px] h-[180px] flex-shrink-0">
+          <div className="relative w-[200px] h-[200px] flex-shrink-0 overflow-hidden rounded-sm">
             <Image
-              src="/images/mandrakept-heart-5079717.png"
-              alt="Anatomical human heart diagram"
+              src="/images/heart-model-3d.jpg"
+              alt="3D anatomical heart model"
               fill
-              className="object-contain"
+              className="object-cover object-center"
             />
           </div>
           <div className="text-center">
@@ -62,12 +62,12 @@ export function HeartUnderstanding() {
             viewport={{ once: true }}
             className="flex-shrink-0"
           >
-            <div className="relative w-[240px] h-[240px]">
+            <div className="relative w-[280px] h-[280px] overflow-hidden rounded-sm">
               <Image
-                src="/images/mandrakept-heart-5079717.png"
-                alt="Anatomical human heart diagram"
+                src="/images/heart-model-3d.jpg"
+                alt="3D anatomical heart model"
                 fill
-                className="object-contain"
+                className="object-cover object-center"
               />
             </div>
           </motion.div>

@@ -101,9 +101,9 @@ export function Header() {
             <Image
               src="/images/sierrra-logo.png"
               alt="Sierra Heart & Vascular Institute"
-              width={120}
-              height={48}
-              className="h-10 w-auto object-contain"
+              width={150}
+              height={60}
+              className="h-12 w-auto object-contain"
             />
           </Link>
 
@@ -150,12 +150,12 @@ export function Header() {
       </header>
 
       {/* Desktop logo — fixed block at top of left column, aligns with header top */}
-      <Link href="/" className="fixed left-6 top-6 z-50 w-[163px] h-[100px] hidden lg:flex items-center justify-center p-2">
+      <Link href="/" className="fixed left-6 top-6 z-50 w-[200px] h-[110px] hidden lg:flex items-center justify-center p-2">
         <Image
           src="/images/sierrra-logo.png"
           alt="Sierra Heart & Vascular Institute"
-          width={163}
-          height={76}
+          width={200}
+          height={90}
           className="w-full h-full object-contain"
         />
       </Link>
@@ -288,8 +288,8 @@ export function Header() {
               >
                 <p className="text-white/40 text-[13px] tracking-[0.16em] font-sans">
                   CALL US:{" "}
-                  <a href="tel:5592180076" className="text-[#c4a35a] hover:underline">
-                    (559) 218-0076
+                  <a href="tel:5592033600" className="text-[#c4a35a] hover:underline">
+                    (559) 203-3600
                   </a>
                 </p>
               </motion.div>

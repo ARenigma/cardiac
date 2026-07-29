@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Figtree, Playfair_Display } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { SmoothScrollProvider } from '@/components/smooth-scroll-provider'
+import { InfoBar } from '@/components/info-bar'
 import './globals.css'
 
 const figtree = Figtree({ 
@@ -47,6 +48,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${figtree.variable} ${playfair.variable} bg-[#0a0a0a]`}>
       <body className="font-sans antialiased bg-[#0a0a0a] text-white">
+        <InfoBar />
         <SmoothScrollProvider>
           {children}
         </SmoothScrollProvider>

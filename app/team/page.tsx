@@ -103,16 +103,16 @@ export default function TeamPage() {
                   "Exceptional heart care begins with an exceptional relationship."
                 </p>
                 <p className="text-white/75 text-[15px] font-sans font-normal leading-[1.85] mb-4">
-                  Dr. Kumar Sanam is a board-certified interventional and structural cardiologist with over 17 years of experience in medicine. Based in Fresno, California, he brings subspecialty expertise in complex coronary intervention, structural heart therapy, and Heart Failure — combining the precision of advanced technique with the depth of a physician who truly knows his patients.
+                  Dr. Kumar Sanam specializes in all areas of general cardiology, heart failure, and complex and advanced cardiac procedures. Board certified in cardiology, interventional cardiology, echocardiography, nuclear cardiology, and vascular medicine, he brings over 17 years of cardiovascular expertise to every encounter. Based in Fresno, California, his practice spans the full spectrum — from preventive cardiology through high-risk structural heart intervention.
                 </p>
                 <p className="text-white/75 text-[15px] font-sans font-normal leading-[1.85] mb-4">
-                  Dr. Sanam completed his Interventional Cardiology Fellowship at the Medical College of Georgia / Augusta University, building on cardiovascular disease fellowship, heart transplant fellowship and residency training from some of the most rigorously trained programs in the country.
+                  Dr. Sanam completed his Interventional Cardiology Fellowship at the Medical College of Georgia, Augusta University, building on a Heart Transplant Fellowship and Cardiovascular Disease Fellowship at the University of Alabama at Birmingham (UAB), and an Internal Medicine Residency from one of the nation's most rigorously trained programs. His Cardiology Fellowship at Providence Hospital in Michigan further shaped his comprehensive approach to cardiac medicine.
                 </p>
                 <p className="text-white/75 text-[15px] font-sans font-normal leading-[1.85] mb-4">
                   But credentials only tell part of the story. Dr. Sanam is attentive, compassionate, and deeply knowledgeable — a physician who takes a whole-person view of cardiovascular health and takes the time to truly care.
                 </p>
                 <p className="text-white/75 text-[15px] font-sans font-normal leading-[1.85] mb-6">
-                  Because whether the goal is a life-saving intervention or preventing one from ever being necessary, Dr. Sanam believes the most powerful tool in cardiovascular medicine remains the same: a physician and patient who trust each other completely.
+                  Because whether the goal is a life-saving intervention or preventing one from ever being necessary, Dr. Sanam believes the most powerful tool in cardiovascular medicine remains the same: a physician and the person they serve who trust each other completely.
                 </p>
 
                 {/* Peer-reviewed publications — sourced from myshavi.com */}
@@ -182,11 +182,12 @@ export default function TeamPage() {
             <p className="text-[#c4a35a] text-[10px] font-sans font-medium tracking-[0.28em] uppercase mb-8">
               EDUCATION & TRAINING
             </p>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
               {[
                 { year: "2008", degree: "Doctor of Medicine (MD)", institution: "Kasturba Medical College, Manipal University", note: "Graduated with Honors" },
                 { year: "2010–13", degree: "Internal Medicine Residency", institution: "University of Alabama at Birmingham (UAB)", note: "Top-Ranked Academic Medical Center" },
-                { year: "2013–16", degree: "Cardiovascular Disease Fellowship", institution: "UAB / Augusta University", note: "ACGME-Accredited Program" },
+                { year: "2013–16", degree: "Cardiovascular Disease Fellowship", institution: "UAB · Providence Hospital, Michigan", note: "ACGME-Accredited Program" },
+                { year: "2016–17", degree: "Heart Transplant Fellowship", institution: "University of Alabama at Birmingham (UAB)", note: "Advanced Heart Failure & Transplant" },
                 { year: "2021–22", degree: "Interventional Cardiology Fellowship", institution: "Medical College of Georgia, Augusta University", note: "Structural Heart · Complex PCI · Vascular" },
               ].map((item) => (
                 <div key={item.year} className="border-l border-white/15 pl-5">

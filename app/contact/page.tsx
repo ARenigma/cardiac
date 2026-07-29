@@ -180,12 +180,12 @@ export default function ContactPage() {
                   {
                     icon: <Phone className="w-4 h-4 text-[#c4a35a]" />,
                     label: "Phone",
-                    lines: ["(559) 218-0076"],
+                    lines: ["(559) 203-3600", "Fax: (559) 910-9955"],
                   },
                   {
                     icon: <Mail className="w-4 h-4 text-[#c4a35a]" />,
                     label: "Email",
-                    lines: ["admin@myshavi.com"],
+                    lines: ["info@myshavi.com"],
                   },
                   {
                     icon: <Clock className="w-4 h-4 text-[#c4a35a]" />,

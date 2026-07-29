@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server"
 
-// Newsletter signup — forwards subscriber email to admin@myshavi.com
+// Newsletter signup — forwards subscriber email to info@myshavi.com
 // Requires env var: RESEND_API_KEY (free at resend.com — 3,000 emails/month)
 
 export async function POST(req: NextRequest) {
@@ -25,7 +25,7 @@ export async function POST(req: NextRequest) {
     },
     body: JSON.stringify({
       from: "Sierra Heart Website <noreply@myshavi.com>",
-      to: ["admin@myshavi.com"],
+      to: ["info@myshavi.com"],
       subject: "New Newsletter Signup — myshavi.com",
       html: `
         <p>A new visitor signed up for the newsletter on <strong>myshavi.com</strong>.</p>

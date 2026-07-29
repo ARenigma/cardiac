@@ -25,7 +25,7 @@ const conditions = {
       "Persistent cough or wheezing",
     ],
     treatments: [
-      "Guideline-directed medical therapy (GDMT) optimization — HFrEF and HFpEF",
+      "Medication optimization to make the heart stronger — HFrEF and HFpEF",
       "Cardiogenic shock management with Impella mechanical circulatory support",
       "CardioMEMS remote pulmonary artery pressure monitoring",
       "Cardiac resynchronization therapy (CRT) coordination",
@@ -37,7 +37,7 @@ const conditions = {
     title: "Arrhythmia",
     subtitle: "Heart Rhythm Disorders",
     category: "THE RHYTHM",
-    image: "/images/cond-arrhythmia.jpg",
+    image: "/images/cond-arrhythmia-ecg.jpg",
     description:
       "An arrhythmia is an irregular heartbeat — your heart may beat too fast, too slow, or with an irregular pattern. While many arrhythmias are harmless, others can be serious or life-threatening and require expert management. Our electrophysiology team specializes in diagnosing and treating the full spectrum of heart rhythm disorders.",
     symptoms: [
@@ -64,7 +64,7 @@ const conditions = {
     title: "Coronary Artery Disease",
     subtitle: "Understanding CAD",
     category: "THE VESSELS",
-    image: "/images/cond-coronary.jpg",
+    image: "/images/cond-blood-vessel.jpg",
     description:
       "Coronary artery disease (CAD) is caused by plaque buildup in the walls of the arteries that supply blood to the heart. This buildup causes the inside of the arteries to narrow over time, which can partially or totally block blood flow. Our interventional team uses advanced imaging and minimally invasive techniques to restore healthy circulation.",
     symptoms: [
@@ -154,7 +154,7 @@ const conditions = {
       "Coronary Artery Calcium (CAC) scoring and CT coronary angiography",
       "Hypertension management including 24-hr ambulatory BP monitoring",
       "GLP-1 & SGLT-2 therapy for cardiometabolic risk reduction",
-      "Post-MI GDMT optimization and DAPT antiplatelet management",
+      "Post-MI medication optimization and DAPT antiplatelet management",
       "Dietary counseling, exercise prescription, smoking cessation, sleep apnea assessment",
     ],
   },

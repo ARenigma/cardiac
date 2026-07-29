@@ -13,8 +13,8 @@ const locations = [
     name: "Sierra Heart & Vascular Institute",
     address: "275 West Herndon Ave",
     city: "Clovis, CA 93612",
-    phone: "(559) 218-0076",
-    fax: null,
+    phone: "(559) 203-3600",
+    fax: "(559) 910-9955",
     hours: [
       "Monday – Friday: 8:00 AM – 5:00 PM",
     ],
@@ -107,9 +107,12 @@ export default function LocationsPage() {
                   <div className="flex items-start gap-3">
                     <Phone className="w-4 h-4 text-[#c4a35a] mt-0.5 flex-shrink-0" />
                     <div>
-                      <a href="tel:5592180076" className="text-black/65 text-[13px] font-sans hover:text-black transition-colors">
+                      <a href="tel:5592033600" className="text-black/65 text-[13px] font-sans hover:text-black transition-colors">
                         {loc.phone}
                       </a>
+                      {loc.fax && (
+                        <p className="text-black/45 text-[12px] font-sans mt-0.5">Fax: {loc.fax}</p>
+                      )}
                     </div>
                   </div>
 
@@ -167,6 +170,36 @@ export default function LocationsPage() {
         </div>
       </section>
 
+      {/* Insurance */}
+      <section className="py-20 bg-white px-8 lg:px-16 border-t border-black/8">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="max-w-3xl"
+          >
+            <p className="text-[#c4a35a] text-[10px] font-sans font-medium tracking-[0.28em] uppercase mb-4">
+              INSURANCE
+            </p>
+            <h2 className="text-3xl md:text-4xl font-sans font-light text-black mb-6">
+              Insurance Partner
+            </h2>
+            <p className="text-black/70 text-[15px] lg:text-[16px] font-sans leading-[1.9] mb-6">
+              We accept all major insurance plans. However, we advise patients to confirm coverage with our office prior to their appointment. Please bring your insurance card and any necessary documentation to ensure a smooth billing process.
+            </p>
+            <a
+              href="tel:5592033600"
+              className="inline-flex items-center gap-3 text-black text-[10px] font-sans font-medium tracking-[0.18em] hover:opacity-55 transition-opacity group"
+            >
+              CALL TO VERIFY COVERAGE
+              <span className="w-6 h-px bg-black group-hover:w-10 transition-all duration-300" />
+            </a>
+          </motion.div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-24 bg-[#0a0a0a] px-8 lg:px-16">
         <div className="max-w-4xl mx-auto text-center">
@@ -190,10 +223,10 @@ export default function LocationsPage() {
                 CONTACT US
               </Link>
               <a
-                href="tel:5592180076"
+                href="tel:5592033600"
                 className="inline-flex items-center justify-center px-8 py-4 border border-white/25 text-white text-[13px] font-sans font-medium tracking-[0.15em] hover:border-white transition-colors"
               >
-                CALL (559) 218-0076
+                CALL (559) 203-3600
               </a>
             </div>
           </motion.div>

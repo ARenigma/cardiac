@@ -33,10 +33,10 @@ export function CTASection() {
               SCHEDULE APPOINTMENT
             </Link>
             <a
-              href="tel:5592180076"
+              href="tel:5592033600"
               className="px-8 py-4 border border-white/30 text-white text-[14px] font-sans font-semibold tracking-[0.15em] hover:border-white transition-colors w-full sm:w-auto"
             >
-              CALL (559) 218-0076
+              CALL (559) 203-3600
             </a>
           </div>
         </motion.div>
