@@ -170,7 +170,7 @@ export function Header() {
             transition={{ duration: 0.3 }}
             className="fixed left-6 top-[160px] z-40 hidden lg:block"
           >
-            <div className="bg-black flex flex-col">
+            <div className="bg-black flex flex-col w-[240px]">
               {[
                 { label: "SCHEDULE APPOINTMENT", href: "/contact" },
                 { label: "PATIENT PORTAL", href: "/contact" },
@@ -179,7 +179,7 @@ export function Header() {
                 <Link
                   key={cta.label}
                   href={cta.href}
-                  className="block px-5 py-4 border-b border-white/10 text-white text-[10px] font-sans font-medium tracking-[0.1em] hover:bg-white hover:text-black transition-all duration-200"
+                  className="block px-5 py-4 border-b border-white/10 text-white text-[10px] font-sans font-medium tracking-[0.1em] hover:bg-white hover:text-black transition-all duration-200 text-center"
                 >
                   {cta.label}
                 </Link>

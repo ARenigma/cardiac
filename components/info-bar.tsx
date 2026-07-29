@@ -6,7 +6,7 @@ export function InfoBar() {
   return (
     <div className="w-full bg-[#0a0a0a] border-b border-white/8 z-[60] relative">
       <div className="max-w-7xl mx-auto px-4 lg:px-6">
-        <div className="flex flex-wrap items-center justify-center lg:justify-end gap-x-6 gap-y-1 py-2">
+        <div className="flex flex-wrap items-center justify-center lg:justify-end gap-x-6 gap-y-1 py-1">
           <a
             href="tel:5592033600"
             className="flex items-center gap-1.5 text-white/60 hover:text-white transition-colors text-[10px] font-sans tracking-[0.08em] whitespace-nowrap"
