@@ -28,7 +28,7 @@ const services = [
     subtitle: "Minimally Invasive Valve & Structural Therapies",
     description:
       "Minimally invasive transcatheter therapies for complex valvular and structural heart disease. TAVR, MitraClip / TEER mitral valve repair, PFO & ASD closure, left atrial appendage occlusion (LAAO), and transcatheter tricuspid interventions — guided by our multidisciplinary heart team.",
-    image: "/images/cond-structural.jpg",
+    image: "/images/surgery-structural.jpg",
     href: "/contact",
   },
   {

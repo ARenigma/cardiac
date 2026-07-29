@@ -90,7 +90,7 @@ const conditions = {
     title: "Structural Heart Disease",
     subtitle: "Heart Valve & Structure Conditions",
     category: "THE VALVES",
-    image: "/images/cond-structural.jpg",
+    image: "/images/surgery-structural.jpg",
     description:
       "Structural heart disease refers to defects or abnormalities in the heart's valves, walls, or chambers. These conditions can be congenital or develop over time due to wear and disease. Our Structural Heart Program offers advanced transcatheter solutions — TAVR, MitraClip, Watchman, and more — many of which require no open surgery.",
     symptoms: [
