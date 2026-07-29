@@ -20,13 +20,13 @@ const drawerLinks = [
     name: "Services",
     href: "/services",
     subLinks: [
-      { name: "Clinical Cardiology", href: "/services" },
-      { name: "Interventional Cardiology", href: "/services" },
-      { name: "Structural Heart / TAVR", href: "/services" },
-      { name: "Advanced Heart Failure", href: "/services" },
-      { name: "Peripheral Vascular", href: "/services" },
-      { name: "Rhythm Management", href: "/services" },
-      { name: "Preventive Cardiology", href: "/conditions/preventive-cardiology" },
+      { name: "Clinical Cardiology", href: "/services/clinical-cardiology" },
+      { name: "Interventional Cardiology", href: "/services/interventional-cardiology" },
+      { name: "Structural Heart / TAVR", href: "/services/structural-heart" },
+      { name: "Advanced Heart Failure", href: "/services/heart-failure" },
+      { name: "Peripheral Vascular", href: "/services/peripheral-vascular" },
+      { name: "Rhythm Management", href: "/services/rhythm-management" },
+      { name: "Preventive Cardiology", href: "/services/preventive-cardiology" },
     ],
   },
   {
@@ -101,9 +101,9 @@ export function Header() {
             <Image
               src="/images/sierrra-logo.png"
               alt="Sierra Heart & Vascular Institute"
-              width={150}
-              height={60}
-              className="h-12 w-auto object-contain"
+              width={180}
+              height={72}
+              className="h-14 w-auto object-contain"
             />
           </Link>
 
@@ -150,12 +150,12 @@ export function Header() {
       </header>
 
       {/* Desktop logo — fixed block at top of left column, aligns with header top */}
-      <Link href="/" className="fixed left-6 top-6 z-50 w-[200px] h-[110px] hidden lg:flex items-center justify-center p-2">
+      <Link href="/" className="fixed left-6 top-6 z-50 w-[240px] h-[130px] hidden lg:flex items-center justify-center p-2">
         <Image
           src="/images/sierrra-logo.png"
           alt="Sierra Heart & Vascular Institute"
-          width={200}
-          height={90}
+          width={240}
+          height={108}
           className="w-full h-full object-contain"
         />
       </Link>

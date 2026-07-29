@@ -52,19 +52,19 @@ export function DoctorSection() {
           </p>
 
           <p className="text-[16px] font-normal text-black/80 leading-[1.85] font-sans mb-3 lg:mb-4">
-            Dr. Kumar Sanam is a board-certified interventional and structural cardiologist based in
-            Fresno, California, with over 17 years of experience in cardiovascular disease. He
-            specializes in complex coronary intervention, structural heart therapy, and vascular medicine.
+            Dr. Kumar Sanam is a board-certified cardiologist based in Fresno, California, with over
+            17 years of experience. He specializes in all areas of general cardiology, heart failure,
+            and complex and advanced cardiac procedures. Board certified in cardiology, interventional
+            cardiology, echocardiography, nuclear cardiology, and vascular medicine.
           </p>
           <p className="text-[16px] font-normal text-black/80 leading-[1.85] font-sans mb-3 lg:mb-4">
-            He completed his Interventional Cardiology Fellowship at the Medical College of Georgia /
-            Augusta University, following cardiovascular disease fellowship and residency training at
-            the University of Alabama at Birmingham.
+            He completed his Interventional Cardiology Fellowship at the Medical College of Georgia,
+            Augusta University, building on a Heart Transplant Fellowship and Cardiovascular Disease
+            Fellowship at UAB Birmingham, and a Cardiology Fellowship at Providence Hospital in Michigan.
           </p>
           <p className="hidden lg:block text-[16px] font-normal text-black/80 leading-[1.85] font-sans mb-8">
-            Patients consistently describe Dr. Sanam as attentive, compassionate, and deeply
-            knowledgeable — a physician who takes a whole-person view of cardiovascular health and
-            takes the time to truly listen.
+            Attentive, compassionate, and deeply knowledgeable — a physician who takes a whole-person
+            view of cardiovascular health and takes the time to truly listen.
           </p>
 
           <div className="flex flex-wrap gap-4 mt-2 lg:mt-0">

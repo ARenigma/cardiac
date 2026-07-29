@@ -4,7 +4,6 @@ import { motion, AnimatePresence } from "framer-motion"
 import { useState, useEffect, useRef } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 
-// Additional reviews pending verification — add real Healthgrades/Google reviews here
 const testimonials = [
   {
     id: 1,
@@ -12,6 +11,34 @@ const testimonials = [
     location: "Fresno, CA · Healthgrades",
     quote:
       "Dr. Sanam is a true 10-star doctor. After 4 years under his expert and personalized care, I feel significantly better and am twice as healthy and energetic as before.",
+  },
+  {
+    id: 2,
+    name: "Verified Patient",
+    location: "Fresno, CA · Healthgrades",
+    quote:
+      "Dr. Sanam has been instrumental in saving my life starting about 3 years ago and he and his staff have been outstanding — caring, professional and knowledgeable.",
+  },
+  {
+    id: 3,
+    name: "Verified Patient",
+    location: "Fresno, CA · Healthgrades",
+    quote:
+      "Dr. Sanam has given me thorough and attentive care since I suffered heart failure a year ago. He ensured I took a full battery of tests, and his follow-up has been superb.",
+  },
+  {
+    id: 4,
+    name: "Verified Patient",
+    location: "Fresno, CA · Healthgrades",
+    quote:
+      "He is kind, thoughtful and concerned about me. He has changed my medicines and that has resulted in my feeling much better. I am very grateful to have him as my doctor.",
+  },
+  {
+    id: 5,
+    name: "Verified Patient",
+    location: "Fresno, CA · Healthgrades",
+    quote:
+      "Dr. Kumar is very friendly and gave me the time needed. He is interested in my life and what I do and expresses that if I ever need anything to be sure to call. Staff was friendly also and he was on time.",
   },
 ]
 

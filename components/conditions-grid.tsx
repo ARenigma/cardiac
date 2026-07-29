@@ -13,7 +13,7 @@ const conditions = [
     category: "THE VESSELS",
     description:
       "Coronary artery disease is caused by plaque buildup in the walls of the arteries that supply blood to the heart. When blood flow is reduced, the heart muscle is starved of oxygen — sometimes silently for years, and sometimes suddenly. Dr. Sanam's interventional expertise spans the full spectrum of CAD management, from medical therapy to the most complex catheter-based interventions.",
-    image: "/images/acc-coronary.jpg",
+    image: "/images/cond-blood-vessel.jpg",
     href: "/conditions/coronary-artery",
   },
   {
@@ -22,7 +22,7 @@ const conditions = [
     category: "THE PUMP",
     description:
       "When the heart muscle can no longer pump efficiently, the effects ripple through the entire body. Heart failure is not the end of the road — with modern guideline-directed therapy, device management, and close follow-up, most patients achieve meaningful improvement in symptoms and quality of life.",
-    image: "/images/acc-heart-failure.jpg",
+    image: "/images/cond-heart-failure.jpg",
     href: "/conditions/heart-failure",
   },
   {
@@ -31,7 +31,7 @@ const conditions = [
     category: "THE RHYTHM",
     description:
       "An intricate electrical system coordinates every heartbeat. When this system misfires — whether too fast, too slow, or out of sequence — the result is an arrhythmia. Some are felt; some are silent; some are dangerous. Accurate diagnosis is the foundation of effective treatment.",
-    image: "/images/acc-arrhythmia.jpg",
+    image: "/images/cond-arrhythmia.jpg",
     href: "/conditions/arrhythmia",
   },
   {
@@ -40,7 +40,7 @@ const conditions = [
     category: "THE VALVES",
     description:
       "Structural heart disease refers to abnormalities of the heart's valves, walls, or chambers — conditions that were once treated only with open surgery. Today, transcatheter techniques allow Dr. Sanam's team to treat many of these conditions through a small catheter, with dramatically shorter recovery and equivalent outcomes.",
-    image: "/images/acc-structural.jpg",
+    image: "/images/cond-structural-new.jpg",
     href: "/conditions/structural-heart",
   },
 ]

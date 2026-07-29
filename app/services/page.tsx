@@ -13,7 +13,7 @@ const services = [
     description:
       "The foundation of your cardiovascular care — comprehensive evaluation, diagnostic testing, and ongoing management of all cardiac conditions. Includes ECG, echocardiogram, stress testing, Holter monitoring, coronary calcium scoring, and pre-operative cardiac clearance.",
     image: "/images/blog-visit.jpg",
-    href: "/contact",
+    href: "/services/clinical-cardiology",
   },
   {
     title: "Interventional Cardiology",
@@ -21,7 +21,7 @@ const services = [
     description:
       "Advanced catheter-based coronary intervention across the full spectrum of complexity — from routine angiography and PCI to CTO intervention, rotational atherectomy, intracoronary lithotripsy, and Impella-supported high-risk PCI in cardiogenic shock. All procedures performed transradially (wrist access) when possible.",
     image: "/images/surgery-structural.jpg",
-    href: "/conditions/coronary-artery",
+    href: "/services/interventional-cardiology",
   },
   {
     title: "Structural Heart Program",
@@ -29,7 +29,7 @@ const services = [
     description:
       "Minimally invasive transcatheter therapies for complex valvular and structural heart disease. TAVR, MitraClip / TEER mitral valve repair, PFO & ASD closure, left atrial appendage occlusion (LAAO), and transcatheter tricuspid interventions — guided by our multidisciplinary heart team.",
     image: "/images/cond-structural-new.jpg",
-    href: "/conditions/structural-heart",
+    href: "/services/structural-heart",
   },
   {
     title: "Advanced Heart Failure",
@@ -37,7 +37,7 @@ const services = [
     description:
       "Comprehensive, guideline-directed management of all stages and phenotypes of heart failure. Medication optimization to strengthen the heart for HFrEF and HFpEF, cardiogenic shock stabilization with Impella, CardioMEMS remote pressure monitoring, and advanced cardiomyopathy evaluation — with a goal of keeping patients out of the hospital and living fully.",
     image: "/images/heart-failure.jpg",
-    href: "/conditions/heart-failure",
+    href: "/services/heart-failure",
   },
   {
     title: "Peripheral Vascular",
@@ -45,7 +45,7 @@ const services = [
     description:
       "Comprehensive endovascular care for peripheral arterial and venous disease, with emphasis on limb salvage and restoration of circulation. PAD, chronic limb-threatening ischemia, peripheral angioplasty and stenting, carotid disease, venous disease, and DVT management.",
     image: "/images/cond-coronary.jpg",
-    href: "/conditions/peripheral-artery",
+    href: "/services/peripheral-vascular",
   },
   {
     title: "Rhythm Management",
@@ -53,7 +53,7 @@ const services = [
     description:
       "Comprehensive evaluation and management of all major cardiac arrhythmias — from atrial fibrillation to ventricular rhythm disorders. Rate and rhythm strategy for AFib, anticoagulation management, cardioversion, pacemaker & ICD coordination, and catheter ablation referral.",
     image: "/images/cond-arrhythmia.jpg",
-    href: "/conditions/arrhythmia",
+    href: "/services/rhythm-management",
   },
   {
     title: "Preventive Cardiology",
@@ -61,7 +61,7 @@ const services = [
     description:
       "Advanced cardiovascular risk assessment using ApoB, Lp(a), LDL-P, coronary artery calcium scoring, and inflammatory biomarkers to identify hidden risk. PCSK9 inhibitors, GLP-1 agonists, SGLT-2 inhibitors, and hypertension management — guided by ACC/AHA guidelines. Because the best intervention is the one you never need.",
     image: "/images/happy-faces-1.jpg",
-    href: "/conditions/preventive-cardiology",
+    href: "/services/preventive-cardiology",
   },
 ]
 

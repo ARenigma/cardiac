@@ -14,7 +14,6 @@ const footerNavTop = [
 ]
 
 const footerNavBottom = [
-  { name: "NEWS", href: "/news" },
   { name: "CONTACT", href: "/contact" },
 ]
 
