@@ -74,7 +74,7 @@ export default function ServicesPage() {
       <section className="relative h-[55vh] flex items-end">
         <div className="absolute inset-0">
           <Image
-            src="/images/proc-room.jpg"
+            src="/images/ultrasound.jpg"
             alt="Sierra Heart & Vascular Institute vascular ultrasound"
             fill
             className="object-cover"
