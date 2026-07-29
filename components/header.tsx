@@ -168,7 +168,7 @@ export function Header() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -16 }}
             transition={{ duration: 0.3 }}
-            className="fixed left-6 top-[128px] z-40 hidden lg:block"
+            className="fixed left-6 top-[160px] z-40 hidden lg:block"
           >
             <div className="bg-black flex flex-col">
               {[
