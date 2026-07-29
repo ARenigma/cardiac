@@ -12,7 +12,7 @@ export function StatsSection() {
   return (
     <section className="bg-[#f5f4f0] py-12 lg:py-16">
       <div className="max-w-6xl mx-auto px-8 lg:px-16">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 md:gap-10 max-w-2xl mx-auto">
           {stats.map((stat, index) => (
             <motion.div
               key={stat.label}
