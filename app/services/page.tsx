@@ -21,7 +21,7 @@ const services = [
     description:
       "Advanced catheter-based coronary intervention across the full spectrum of complexity — from routine angiography and PCI to CTO intervention, rotational atherectomy, intracoronary lithotripsy, and Impella-supported high-risk PCI in cardiogenic shock. All procedures performed transradially (wrist access) when possible.",
     image: "/images/surgery-interventional-cardiology.jpg",
-    imagePosition: "right center",
+    imagePosition: "left center",
     href: "/services/interventional-cardiology",
   },
   {
