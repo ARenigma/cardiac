@@ -40,7 +40,7 @@ const services = {
     title: "Interventional Cardiology",
     subtitle: "Advanced Catheter-Based Coronary Procedures",
     category: "INTERVENTIONAL",
-    image: "/images/surgery-structural.jpg",
+    image: "/images/ic-surgical-room.jpg",
     description:
       "Interventional cardiology uses thin, flexible catheters — inserted through a small puncture in the wrist or groin — to diagnose and treat blockages in the coronary arteries without open-heart surgery. Dr. Sanam is fellowship-trained in complex coronary intervention and routinely performs the most technically demanding procedures using wrist-based (transradial) access, which means less bleeding, faster recovery, and same-day discharge for most patients.",
     procedures: [

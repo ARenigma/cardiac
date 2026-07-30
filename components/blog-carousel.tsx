@@ -14,7 +14,7 @@ const blogPosts = [
       "Transcatheter aortic valve replacement has transformed outcomes for patients with severe aortic stenosis. Dr. Sanam walks through who is a candidate, what the procedure involves, and what recovery looks like.",
     date: "March 15, 2026",
     category: "Procedures",
-    image: "/images/blog-tavr.jpg",
+    image: "/images/blog-tavr-valve.jpg",
     href: "#",
   },
   {
