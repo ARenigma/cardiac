@@ -22,6 +22,7 @@ const services = [
       "Advanced catheter-based coronary intervention across the full spectrum of complexity — from routine angiography and PCI to CTO intervention, rotational atherectomy, intracoronary lithotripsy, and Impella-supported high-risk PCI in cardiogenic shock. All procedures performed transradially (wrist access) when possible.",
     image: "/images/surgery-interventional-cardiology.jpg",
     imagePosition: "left center",
+    cardAspect: "aspect-[16/9]",
     href: "/services/interventional-cardiology",
   },
   {
@@ -128,7 +129,7 @@ export default function ServicesPage() {
                 viewport={{ once: true }}
               >
                 <Link href={service.href} className="group block">
-                  <div className="relative aspect-[4/3] mb-6 overflow-hidden">
+                  <div className={`relative ${(service as any).cardAspect ?? "aspect-[4/3]"} mb-6 overflow-hidden`}>
                     <Image
                       src={service.image}
                       alt={service.title}
