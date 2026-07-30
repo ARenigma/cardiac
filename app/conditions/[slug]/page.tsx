@@ -114,7 +114,7 @@ const conditions = {
     title: "Peripheral Artery Disease",
     subtitle: "Endovascular & Limb Salvage Therapy",
     category: "THE VESSELS",
-    image: "/images/ultrasound.jpg",
+    image: "/images/leg-ultrasound.jpg",
     description:
       "Peripheral artery disease (PAD) occurs when narrowed arteries reduce blood flow to the limbs — most often the legs. Left untreated, PAD can progress to chronic limb-threatening ischemia, non-healing wounds, and limb loss. Dr. Sanam offers a full range of endovascular therapies aimed at restoring circulation and preserving limb function.",
     symptoms: [

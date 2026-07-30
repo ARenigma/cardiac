@@ -20,7 +20,7 @@ const services = [
     subtitle: "Advanced Catheter-Based Procedures",
     description:
       "Advanced catheter-based coronary intervention across the full spectrum of complexity — from routine angiography and PCI to CTO intervention, rotational atherectomy, intracoronary lithotripsy, and Impella-supported high-risk PCI in cardiogenic shock. All procedures performed transradially (wrist access) when possible.",
-    image: "/images/ic-surgical-room.jpg",
+    image: "/images/surgery-interventional-cardiology.jpg",
     href: "/services/interventional-cardiology",
   },
   {
@@ -44,7 +44,7 @@ const services = [
     subtitle: "Endovascular & Limb Salvage",
     description:
       "Comprehensive endovascular care for peripheral arterial and venous disease, with emphasis on limb salvage and restoration of circulation. PAD, chronic limb-threatening ischemia, peripheral angioplasty and stenting, carotid disease, venous disease, and DVT management.",
-    image: "/images/cond-coronary.jpg",
+    image: "/images/leg-ultrasound.jpg",
     href: "/services/peripheral-vascular",
   },
   {
@@ -74,7 +74,7 @@ export default function ServicesPage() {
       <section className="relative h-[55vh] flex items-end">
         <div className="absolute inset-0">
           <Image
-            src="/images/ultrasound.jpg"
+            src="/images/ultrasound_services.jpg"
             alt="Sierra Heart & Vascular Institute vascular ultrasound"
             fill
             className="object-cover"

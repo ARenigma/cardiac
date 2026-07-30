@@ -40,7 +40,7 @@ const services = {
     title: "Interventional Cardiology",
     subtitle: "Advanced Catheter-Based Coronary Procedures",
     category: "INTERVENTIONAL",
-    image: "/images/ic-surgical-room.jpg",
+    image: "/images/surgery-interventional-cardiology.jpg",
     description:
       "Interventional cardiology uses thin, flexible catheters — inserted through a small puncture in the wrist or groin — to diagnose and treat blockages in the coronary arteries without open-heart surgery. Dr. Sanam is fellowship-trained in complex coronary intervention and routinely performs the most technically demanding procedures using wrist-based (transradial) access, which means less bleeding, faster recovery, and same-day discharge for most patients.",
     procedures: [
@@ -121,7 +121,7 @@ const services = {
     title: "Peripheral Vascular",
     subtitle: "Endovascular & Limb Salvage Therapy",
     category: "VASCULAR",
-    image: "/images/ultrasound.jpg",
+    image: "/images/leg-ultrasound.jpg",
     description:
       "Peripheral artery disease affects one in five adults over age 65, yet it is dramatically underdiagnosed and undertreated. Left untreated, PAD progresses to chronic limb-threatening ischemia — non-healing wounds, gangrene, and limb loss. Dr. Sanam offers a full spectrum of endovascular therapies to restore circulation in the legs, carotid arteries, and renal vessels, with a strong focus on limb salvage in the highest-risk patients.",
     procedures: [
