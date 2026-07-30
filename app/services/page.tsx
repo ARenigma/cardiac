@@ -71,7 +71,7 @@ export default function ServicesPage() {
       <Header />
 
       {/* Hero */}
-      <section className="relative h-[55vh] flex items-end">
+      <section className="relative w-full aspect-video flex items-end">
         <div className="absolute inset-0">
           <Image
             src="/images/ultrasound_services.jpg"
