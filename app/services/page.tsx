@@ -60,7 +60,7 @@ const services = [
     subtitle: "Stop Heart Disease Before It Starts",
     description:
       "Advanced cardiovascular risk assessment using ApoB, Lp(a), LDL-P, coronary artery calcium scoring, and inflammatory biomarkers to identify hidden risk. PCSK9 inhibitors, GLP-1 agonists, SGLT-2 inhibitors, and hypertension management — guided by ACC/AHA guidelines. Because the best intervention is the one you never need.",
-    image: "/images/happy-faces-1.jpg",
+    image: "/images/prevention-hiking.jpg",
     href: "/services/preventive-cardiology",
   },
 ]

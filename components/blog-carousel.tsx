@@ -34,7 +34,7 @@ const blogPosts = [
       "Standard cholesterol panels miss a significant portion of cardiovascular risk. Advanced lipid testing — ApoB, Lp(a), and LDL particle number — reveals hidden danger and guides more precise treatment decisions.",
     date: "March 5, 2026",
     category: "Prevention",
-    image: "/images/happy-faces-2.jpg",
+    image: "/images/prevention-hiking.jpg",
     href: "#",
   },
   {
