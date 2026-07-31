@@ -76,7 +76,7 @@ export function Footer() {
           {/* Col 1 — Medical badges */}
           <div className="flex items-start justify-center lg:justify-start gap-4">
             {/* FACC */}
-            <div className="flex flex-col items-center gap-2">
+            <div className="flex flex-col items-center gap-2 w-16">
               <div className="w-14 h-14 border border-white/25 flex items-center justify-center">
                 <svg viewBox="0 0 40 40" className="w-10 h-10" fill="none">
                   <circle cx="20" cy="20" r="18" stroke="currentColor" strokeWidth="1.2" className="text-white/60" />
@@ -87,7 +87,7 @@ export function Footer() {
               <span className="text-[8px] text-white/55 tracking-[0.12em] text-center leading-tight font-medium">FELLOW<br/>AM. COLLEGE</span>
             </div>
             {/* FSCAI */}
-            <div className="flex flex-col items-center gap-2">
+            <div className="flex flex-col items-center gap-2 w-16">
               <div className="w-14 h-14 border border-white/25 flex items-center justify-center">
                 <svg viewBox="0 0 40 40" className="w-10 h-10" fill="none">
                   <rect x="4" y="4" width="32" height="32" stroke="currentColor" strokeWidth="1.2" className="text-white/60" />
@@ -98,7 +98,7 @@ export function Footer() {
               <span className="text-[8px] text-white/55 tracking-[0.12em] text-center leading-tight font-medium">FELLOW<br/>SCAI</span>
             </div>
             {/* RPVI */}
-            <div className="flex flex-col items-center gap-2">
+            <div className="flex flex-col items-center gap-2 w-16">
               <div className="w-14 h-14 border border-white/25 flex items-center justify-center">
                 <svg viewBox="0 0 40 40" className="w-10 h-10" fill="none">
                   <path d="M20 4 L34 10 L34 22 Q34 32 20 36 Q6 32 6 22 L6 10 Z" stroke="currentColor" strokeWidth="1.2" className="text-white/60" />
@@ -109,7 +109,7 @@ export function Footer() {
               <span className="text-[8px] text-white/55 tracking-[0.12em] text-center leading-tight font-medium">REGISTERED PHYSICIAN<br/>IN VASCULAR INTERP.</span>
             </div>
             {/* ABMS */}
-            <div className="flex flex-col items-center gap-2">
+            <div className="flex flex-col items-center gap-2 w-16">
               <div className="w-14 h-14 border border-white/25 flex items-center justify-center">
                 <svg viewBox="0 0 40 40" className="w-10 h-10" fill="none">
                   <circle cx="20" cy="20" r="18" stroke="currentColor" strokeWidth="1.2" className="text-white/60" />
