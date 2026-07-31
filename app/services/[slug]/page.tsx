@@ -171,6 +171,33 @@ const services = {
     ],
     relatedCondition: "/conditions/arrhythmia",
   },
+  "preventive-cardiology": {
+    title: "Preventive Cardiology",
+    subtitle: "Stop Heart Disease Before It Starts",
+    category: "PREVENTION",
+    image: "/images/prevention-hiking.jpg",
+    description:
+      "Most heart attacks happen in people who had no idea they were at risk. Standard cholesterol panels miss a significant portion of cardiovascular disease — they don't measure the particles that actually cause plaque. Dr. Sanam uses advanced risk profiling to find hidden danger early, combining biomarker testing, imaging, and guideline-directed therapy to reduce your lifetime risk of heart attack and stroke before symptoms ever appear.",
+    procedures: [
+      "Advanced lipid panel — ApoB, Lp(a), LDL particle number, sdLDL",
+      "Coronary Artery Calcium (CAC) scoring — quantifying subclinical atherosclerosis",
+      "High-sensitivity CRP and inflammatory biomarker assessment",
+      "Carotid intima-media thickness (CIMT) imaging",
+      "PCSK9 inhibitor therapy — for high-risk patients not at LDL goal",
+      "GLP-1 agonist therapy — weight, glycemic, and cardiovascular risk reduction",
+      "SGLT-2 inhibitor therapy — heart failure and cardiorenal protection",
+      "Hypertension evaluation and precision antihypertensive management",
+    ],
+    whoNeedsIt: [
+      "Family history of premature heart disease or sudden cardiac death",
+      "Elevated LDL, ApoB, or Lp(a) on prior lab work",
+      "Diabetes, prediabetes, or metabolic syndrome",
+      "Hypertension or borderline high blood pressure",
+      "Smoker or former smoker over age 40",
+      "Obesity or significant weight gain — especially abdominal",
+    ],
+    relatedCondition: "/conditions/coronary-artery",
+  },
 }
 
 export default function ServicePage({ params }: { params: Promise<{ slug: string }> }) {
