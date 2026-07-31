@@ -74,7 +74,7 @@ export function Footer() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-6 items-center">
 
           {/* Col 1 — Medical badges */}
-          <div className="flex items-center justify-center lg:justify-start gap-4">
+          <div className="flex items-start justify-center lg:justify-start gap-4">
             {/* FACC */}
             <div className="flex flex-col items-center gap-2">
               <div className="w-14 h-14 border border-white/25 flex items-center justify-center">
