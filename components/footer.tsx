@@ -71,7 +71,7 @@ export function Footer() {
         </nav>
 
         {/* Badges, Newsletter, Social — 3-col grid on desktop, stacked on mobile */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-6 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-6 items-start">
 
           {/* Col 1 — Medical badges */}
           <div className="flex items-start justify-center lg:justify-start gap-4">
