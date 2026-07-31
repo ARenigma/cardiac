@@ -1,6 +1,6 @@
 "use client"
 
-import { Phone, MapPin, Clock } from "lucide-react"
+import { Phone, Printer, Mail, MapPin, Clock } from "lucide-react"
 
 export function InfoBar() {
   return (
@@ -16,7 +16,7 @@ export function InfoBar() {
           </a>
           <span className="text-white/20 text-[10px] hidden sm:block">|</span>
           <span className="flex items-center gap-1.5 text-white/60 text-[11px] font-sans tracking-[0.08em] whitespace-nowrap">
-            <Phone className="w-3 h-3 text-white/30" />
+            <Printer className="w-3 h-3 text-[#c4a35a]" />
             Fax: (559) 910-9955
           </span>
           <span className="text-white/20 text-[10px] hidden sm:block">|</span>
@@ -24,6 +24,7 @@ export function InfoBar() {
             href="mailto:info@myshavi.com"
             className="flex items-center gap-1.5 text-white/60 hover:text-white transition-colors text-[11px] font-sans tracking-[0.08em] whitespace-nowrap"
           >
+            <Mail className="w-3 h-3 text-[#c4a35a]" />
             info@myshavi.com
           </a>
           <span className="text-white/20 text-[10px] hidden sm:block">|</span>
