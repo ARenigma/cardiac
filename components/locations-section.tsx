@@ -24,7 +24,7 @@ export function LocationsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="mb-14"
+          className="mb-14 text-center"
         >
           <p className="text-black/35 text-[10px] font-sans font-medium tracking-[0.28em] uppercase mb-3">
             FIND US
@@ -35,7 +35,7 @@ export function LocationsSection() {
         </motion.div>
 
         {/* Locations */}
-        <div className="grid grid-cols-1 md:grid-cols-1 max-w-lg gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-1 max-w-lg gap-8 mx-auto">
           {locations.map((loc, index) => (
             <motion.div
               key={loc.name}
