@@ -13,9 +13,7 @@ const footerNavTop = [
   { name: "CONTACT", href: "/contact" },
 ]
 
-const footerNavBottom = [
-  { name: "CONTACT", href: "/contact" },
-]
+const footerNavBottom: { name: string; href: string }[] = []
 
 export function Footer() {
   const [email, setEmail] = useState("")
