@@ -71,6 +71,46 @@
   }
 }
 
+/* ── Cross-browser safety nets ─────────────────────────────────────── */
+
+/* Framer Motion fallback: if JS doesn't execute, opacity:0 elements remain
+   invisible. After 2s we force them visible so content is never permanently
+   hidden. JS-driven animations override this immediately on hydration. */
+@keyframes fm-reveal {
+  to { opacity: 1; transform: none; }
+}
+[style*="opacity: 0"],
+[style*="opacity:0"] {
+  animation: fm-reveal 0s 2s forwards;
+}
+
+/* Tailwind v4 requires modern browsers (Chrome 111+, Firefox 128+, Safari
+   16.4+). For older engines that ignore @layer, set the critical base styles
+   outside any layer so they always apply. */
+html, body {
+  background-color: #0a0a0a;
+  color: #ffffff;
+}
+
+/* Firefox scrollbar-width (complement to the -webkit rule below) */
+.scrollbar-none {
+  scrollbar-width: none;
+}
+
+/* Reduced-motion: skip all transitions/animations for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  [style*="opacity: 0"],
+  [style*="opacity:0"] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
 /* Hide scrollbar utility for horizontal swipe containers */
 .scrollbar-none::-webkit-scrollbar {
   display: none;
