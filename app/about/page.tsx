@@ -5,6 +5,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { WEAVE_SCHEDULING_URL } from "@/lib/constants"
 
 const values = [
   {
@@ -87,7 +88,9 @@ export default function AboutPage() {
                 Dr. Sanam founded Sierra Heart and Vascular Institute with a singular conviction that exceptional cardiac care must be both technically excellent and deeply personal—and that the physician-patient relationship is not a formality, but the foundation of every successful outcome.
               </p>
               <Link
-                href="/contact"
+                href={WEAVE_SCHEDULING_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-4 text-black text-[10px] font-sans font-medium tracking-[0.18em] hover:opacity-55 transition-opacity group"
               >
                 SCHEDULE APPOINTMENT
@@ -175,7 +178,9 @@ export default function AboutPage() {
               Join the patients across the Central Valley who have trusted Sierra Heart & Vascular Institute with their cardiovascular health.
             </p>
             <Link
-              href="/contact"
+              href={WEAVE_SCHEDULING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-4 bg-black text-white text-[13px] font-sans font-semibold tracking-[0.15em] hover:bg-[#c4a35a] hover:text-black transition-colors"
             >
               SCHEDULE APPOINTMENT

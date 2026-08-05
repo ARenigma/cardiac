@@ -7,6 +7,7 @@ import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { ArrowLeft } from "lucide-react"
+import { WEAVE_SCHEDULING_URL } from "@/lib/constants"
 
 const services = {
   "clinical-cardiology": {
@@ -339,7 +340,9 @@ export default function ServicePage({ params }: { params: Promise<{ slug: string
                   </Link>
                   <br />
                   <Link
-                    href="/contact"
+                    href={WEAVE_SCHEDULING_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-4 text-black text-[10px] font-sans font-semibold tracking-[0.18em] hover:opacity-55 transition-opacity group"
                   >
                     SCHEDULE APPOINTMENT

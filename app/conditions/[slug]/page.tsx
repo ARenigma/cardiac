@@ -7,6 +7,7 @@ import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { ArrowLeft } from "lucide-react"
+import { WEAVE_SCHEDULING_URL } from "@/lib/constants"
 
 const conditions = {
   "heart-failure": {
@@ -291,7 +292,9 @@ export default function ConditionPage({ params }: { params: Promise<{ slug: stri
                     on your individual condition and health goals.
                   </p>
                   <Link
-                    href="/contact"
+                    href={WEAVE_SCHEDULING_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-4 text-black text-[10px] font-sans font-semibold tracking-[0.18em] hover:opacity-55 transition-opacity group"
                   >
                     SCHEDULE APPOINTMENT

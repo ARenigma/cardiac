@@ -5,6 +5,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { WEAVE_SCHEDULING_URL } from "@/lib/constants"
 
 // Additional physicians will be enabled when they join the practice
 // const upcomingDoctors = [
@@ -162,7 +163,9 @@ export default function TeamPage() {
                 </div>
 
                 <Link
-                  href="/contact"
+                  href={WEAVE_SCHEDULING_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center px-6 py-3 bg-[#c4a35a] text-black text-[13px] font-sans font-semibold tracking-[0.15em] hover:bg-white transition-colors self-start"
                 >
                   SCHEDULE APPOINTMENT
@@ -218,7 +221,9 @@ export default function TeamPage() {
               Dr. Sanam is currently accepting new patients. Urgent referrals welcomed.
             </p>
             <Link
-              href="/contact"
+              href={WEAVE_SCHEDULING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-4 bg-[#c4a35a] text-black text-[13px] font-sans font-semibold tracking-wide hover:bg-white transition-colors"
             >
               SCHEDULE APPOINTMENT

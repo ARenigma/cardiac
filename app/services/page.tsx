@@ -5,6 +5,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { WEAVE_SCHEDULING_URL } from "@/lib/constants"
 
 const services = [
   {
@@ -178,7 +179,9 @@ export default function ServicesPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/contact"
+                href={WEAVE_SCHEDULING_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-8 py-4 bg-white text-black text-[13px] font-sans font-semibold tracking-[0.15em] hover:bg-[#c4a35a] transition-colors"
               >
                 SCHEDULE APPOINTMENT

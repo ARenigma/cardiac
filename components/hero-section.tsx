@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
 import { HeroBrandName } from "./hero-practice-name"
+import { WEAVE_SCHEDULING_URL } from "@/lib/constants"
 
 export function HeroSection() {
   const scrollToContent = () => {
@@ -49,7 +50,9 @@ export function HeroSection() {
           className="mt-7 flex flex-row gap-3 items-center lg:hidden"
         >
           <Link
-            href="/contact"
+            href={WEAVE_SCHEDULING_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-4 py-3 bg-white text-black text-[11px] font-sans font-semibold tracking-[0.06em] hover:bg-[#c4a35a] transition-colors whitespace-nowrap"
           >
             SCHEDULE APPOINTMENT

@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { MapPin, Phone, Clock } from "lucide-react"
 import Link from "next/link"
+import { WEAVE_SCHEDULING_URL } from "@/lib/constants"
 
 const locations = [
   {
@@ -74,7 +75,9 @@ export function LocationsSection() {
 
               <div className="mt-8 pt-6 border-t border-black/8">
                 <Link
-                  href="/contact"
+                  href={WEAVE_SCHEDULING_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-3 text-black text-[10px] font-sans font-medium tracking-[0.18em] hover:opacity-55 transition-opacity group"
                 >
                   SCHEDULE APPOINTMENT

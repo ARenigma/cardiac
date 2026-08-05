@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
+import { WEAVE_SCHEDULING_URL } from "@/lib/constants"
 
 export function DoctorSection() {
   return (
@@ -76,7 +77,9 @@ export function DoctorSection() {
               <span className="w-8 h-px bg-black group-hover:w-14 transition-all duration-300" />
             </Link>
             <Link
-              href="/contact"
+              href={WEAVE_SCHEDULING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center px-5 py-2.5 bg-black text-white text-[14px] font-sans font-semibold tracking-[0.15em] hover:bg-black/80 transition-colors"
             >
               SCHEDULE APPOINTMENT

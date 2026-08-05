@@ -6,6 +6,7 @@ import { X } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import { usePathname } from "next/navigation"
+import { WEAVE_SCHEDULING_URL } from "@/lib/constants"
 
 const navLinks = [
   { name: "THE PRACTICE", href: "/about" },
@@ -132,7 +133,9 @@ export function Header() {
           {/* Mobile: BOOK CONSULT + hamburger */}
           <div className="lg:hidden ml-auto flex items-center gap-2 pr-4">
             <Link
-              href="/contact"
+              href={WEAVE_SCHEDULING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-3 py-2 text-[10px] font-sans font-semibold tracking-[0.05em] text-black bg-white hover:bg-[#c4a35a] transition-colors whitespace-nowrap"
             >
               SCHEDULE APPOINTMENT
@@ -172,13 +175,15 @@ export function Header() {
           >
             <div className="bg-black flex flex-col w-[240px]">
               {[
-                { label: "SCHEDULE APPOINTMENT", href: "/contact" },
-                { label: "PATIENT PORTAL", href: "/contact" },
-                { label: "UPLOAD IMAGES", href: "/contact" },
+                { label: "SCHEDULE APPOINTMENT", href: WEAVE_SCHEDULING_URL, external: true },
+                { label: "PATIENT PORTAL", href: "/contact", external: false },
+                { label: "UPLOAD IMAGES", href: "/contact", external: false },
               ].map((cta) => (
                 <Link
                   key={cta.label}
                   href={cta.href}
+                  target={cta.external ? "_blank" : undefined}
+                  rel={cta.external ? "noopener noreferrer" : undefined}
                   className="block px-5 py-4 border-b border-white/10 text-white text-[10px] font-sans font-medium tracking-[0.1em] hover:bg-white hover:text-black transition-all duration-200 text-center"
                 >
                   {cta.label}

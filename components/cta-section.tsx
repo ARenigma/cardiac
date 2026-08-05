@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import Link from "next/link"
+import { WEAVE_SCHEDULING_URL } from "@/lib/constants"
 
 export function CTASection() {
   return (
@@ -27,7 +28,9 @@ export function CTASection() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <Link
-              href="/contact"
+              href={WEAVE_SCHEDULING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-4 bg-white text-black text-[14px] font-sans font-semibold tracking-[0.15em] hover:bg-[#c4a35a] transition-colors w-full sm:w-auto"
             >
               SCHEDULE APPOINTMENT
